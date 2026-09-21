@@ -1,0 +1,1241 @@
+{
+  "checkedAt": "2026-09-15",
+  "sources": [
+    "https://darksideshop.com/brands/darkside/?products=tobacco",
+    "https://musthave.ru/category/tabak-dlya-kalyana/"
+  ],
+  "products": [
+    {
+      "id": "ds-admiral-acbar",
+      "brand": "DARKSIDE",
+      "name": "Admiral Acbar",
+      "shortName": "Admiral Acbar",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-applecot",
+      "brand": "DARKSIDE",
+      "name": "Applecot",
+      "shortName": "Applecot",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-astro-tea",
+      "brand": "DARKSIDE",
+      "name": "Astro Tea",
+      "shortName": "Astro Tea",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-bananapapa",
+      "brand": "DARKSIDE",
+      "name": "Bananapapa",
+      "shortName": "Bananapapa",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-barberry-gum",
+      "brand": "DARKSIDE",
+      "name": "Barberry Gum",
+      "shortName": "Barberry Gum",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-barvy-citrus",
+      "brand": "DARKSIDE",
+      "name": "Barvy Citrus",
+      "shortName": "Barvy Citrus",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-barvy-orange",
+      "brand": "DARKSIDE",
+      "name": "Barvy Orange",
+      "shortName": "Barvy Orange",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-basil-blast",
+      "brand": "DARKSIDE",
+      "name": "Basil Blast",
+      "shortName": "Basil Blast",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-bassberry",
+      "brand": "DARKSIDE",
+      "name": "Bassberry",
+      "shortName": "Bassberry",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-bergamonstr",
+      "brand": "DARKSIDE",
+      "name": "Bergamonstr",
+      "shortName": "Bergamonstr",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-blackberry",
+      "brand": "DARKSIDE",
+      "name": "Blackberry",
+      "shortName": "Blackberry",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-blackcurrant",
+      "brand": "DARKSIDE",
+      "name": "Blackcurrant",
+      "shortName": "Blackcurrant",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-blackout",
+      "brand": "DARKSIDE",
+      "name": "BLACKOUT",
+      "shortName": "BLACKOUT",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-blueberry-blast",
+      "brand": "DARKSIDE",
+      "name": "Blueberry Blast",
+      "shortName": "Blueberry Blast",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-bounty-hunter",
+      "brand": "DARKSIDE",
+      "name": "Bounty Hunter",
+      "shortName": "Bounty Hunter",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-breaking-red",
+      "brand": "DARKSIDE",
+      "name": "Breaking Red",
+      "shortName": "Breaking Red",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-c-r-e-a-m-s-o-d-a-",
+      "brand": "DARKSIDE",
+      "name": "C.R.E.A.M. S.O.D.A.",
+      "shortName": "C.R.E.A.M. S.O.D.A.",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-cherry-rocks",
+      "brand": "DARKSIDE",
+      "name": "Cherry Rocks",
+      "shortName": "Cherry Rocks",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-code-cherry",
+      "brand": "DARKSIDE",
+      "name": "Code Cherry",
+      "shortName": "Code Cherry",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-cosmo-flower",
+      "brand": "DARKSIDE",
+      "name": "Cosmo Flower",
+      "shortName": "Cosmo Flower",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-cosmos",
+      "brand": "DARKSIDE",
+      "name": "Cosmos",
+      "shortName": "Cosmos",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-crystal-grape",
+      "brand": "DARKSIDE",
+      "name": "CRYSTAL GRAPE",
+      "shortName": "CRYSTAL GRAPE",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-cyber-kiwi",
+      "brand": "DARKSIDE",
+      "name": "Cyber Kiwi",
+      "shortName": "Cyber Kiwi",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-dark-icecream",
+      "brand": "DARKSIDE",
+      "name": "Dark Icecream",
+      "shortName": "Dark Icecream",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-dark-mint",
+      "brand": "DARKSIDE",
+      "name": "Dark Mint",
+      "shortName": "Dark Mint",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-dark-passion",
+      "brand": "DARKSIDE",
+      "name": "Dark Passion",
+      "shortName": "Dark Passion",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-darkside-cola",
+      "brand": "DARKSIDE",
+      "name": "Darkside Cola",
+      "shortName": "Darkside Cola",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-darksupra",
+      "brand": "DARKSIDE",
+      "name": "Darksupra",
+      "shortName": "Darksupra",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-deep-blue-sea",
+      "brand": "DARKSIDE",
+      "name": "Deep Blue Sea",
+      "shortName": "Deep Blue Sea",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-desert-eagle",
+      "brand": "DARKSIDE",
+      "name": "Desert Eagle",
+      "shortName": "Desert Eagle",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-deus",
+      "brand": "DARKSIDE",
+      "name": "DEUS",
+      "shortName": "DEUS",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-falling-star",
+      "brand": "DARKSIDE",
+      "name": "Falling Star",
+      "shortName": "Falling Star",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-fruitality",
+      "brand": "DARKSIDE",
+      "name": "Fruitality",
+      "shortName": "Fruitality",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-fruity-dust",
+      "brand": "DARKSIDE",
+      "name": "Fruity Dust",
+      "shortName": "Fruity Dust",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-genesis-raspberry",
+      "brand": "DARKSIDE",
+      "name": "Genesis Raspberry",
+      "shortName": "Genesis Raspberry",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-glitch-ice-tea",
+      "brand": "DARKSIDE",
+      "name": "Glitch Ice Tea",
+      "shortName": "Glitch Ice Tea",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-goal",
+      "brand": "DARKSIDE",
+      "name": "Goal",
+      "shortName": "Goal",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-grape-core",
+      "brand": "DARKSIDE",
+      "name": "Grape Core",
+      "shortName": "Grape Core",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-green-beam",
+      "brand": "DARKSIDE",
+      "name": "Green Beam",
+      "shortName": "Green Beam",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-green-mist",
+      "brand": "DARKSIDE",
+      "name": "Green Mist",
+      "shortName": "Green Mist",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-guava-rebel",
+      "brand": "DARKSIDE",
+      "name": "Guava Rebel",
+      "shortName": "Guava Rebel",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-honey-dust",
+      "brand": "DARKSIDE",
+      "name": "Honey Dust",
+      "shortName": "Honey Dust",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-ice-granny",
+      "brand": "DARKSIDE",
+      "name": "Ice Granny",
+      "shortName": "Ice Granny",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-kalee-grapefruit-2-0",
+      "brand": "DARKSIDE",
+      "name": "Kalee Grapefruit 2.0",
+      "shortName": "Kalee Grapefruit 2.0",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-kashmir-goa-java",
+      "brand": "DARKSIDE",
+      "name": "KASHMIR GOA JAVA",
+      "shortName": "KASHMIR GOA JAVA",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-killer-milk",
+      "brand": "DARKSIDE",
+      "name": "Killer Milk",
+      "shortName": "Killer Milk",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-lemonblast",
+      "brand": "DARKSIDE",
+      "name": "Lemonblast",
+      "shortName": "Lemonblast",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-mango-lassi-2-0",
+      "brand": "DARKSIDE",
+      "name": "Mango Lassi 2.0",
+      "shortName": "Mango Lassi 2.0",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-needls",
+      "brand": "DARKSIDE",
+      "name": "Needls",
+      "shortName": "Needls",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-nordberry",
+      "brand": "DARKSIDE",
+      "name": "Nordberry",
+      "shortName": "Nordberry",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-pear",
+      "brand": "DARKSIDE",
+      "name": "Pear",
+      "shortName": "Pear",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-pineapple-pulse",
+      "brand": "DARKSIDE",
+      "name": "Pineapple Pulse",
+      "shortName": "Pineapple Pulse",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-polar-cream",
+      "brand": "DARKSIDE",
+      "name": "Polar Cream",
+      "shortName": "Polar Cream",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-pomelow",
+      "brand": "DARKSIDE",
+      "name": "POMELOW",
+      "shortName": "POMELOW",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-raf-in-the-jungle",
+      "brand": "DARKSIDE",
+      "name": "Raf In The Jungle",
+      "shortName": "Raf In The Jungle",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-red-alert",
+      "brand": "DARKSIDE",
+      "name": "Red Alert",
+      "shortName": "Red Alert",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-red-rush",
+      "brand": "DARKSIDE",
+      "name": "Red Rush",
+      "shortName": "Red Rush",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-red-tea",
+      "brand": "DARKSIDE",
+      "name": "Red Tea",
+      "shortName": "Red Tea",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-red-zeppelin",
+      "brand": "DARKSIDE",
+      "name": "RED ZEPPELIN",
+      "shortName": "RED ZEPPELIN",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-redberry",
+      "brand": "DARKSIDE",
+      "name": "Redberry",
+      "shortName": "Redberry",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-rivers-of-blood",
+      "brand": "DARKSIDE",
+      "name": "Rivers of Blood",
+      "shortName": "Rivers of Blood",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-salbei",
+      "brand": "DARKSIDE",
+      "name": "Salbei",
+      "shortName": "Salbei",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-space-jam",
+      "brand": "DARKSIDE",
+      "name": "Space Jam",
+      "shortName": "Space Jam",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-space-lychee",
+      "brand": "DARKSIDE",
+      "name": "Space Lychee",
+      "shortName": "Space Lychee",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-strawberry-light",
+      "brand": "DARKSIDE",
+      "name": "Strawberry Light",
+      "shortName": "Strawberry Light",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-supermint-myata-ot-ds",
+      "brand": "DARKSIDE",
+      "name": "SUPERMINT | MYATA OT DS",
+      "shortName": "SUPERMINT | MYATA OT DS",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-supernova",
+      "brand": "DARKSIDE",
+      "name": "Supernova",
+      "shortName": "Supernova",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-sweet-comet",
+      "brand": "DARKSIDE",
+      "name": "Sweet Comet",
+      "shortName": "Sweet Comet",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-top-gym",
+      "brand": "DARKSIDE",
+      "name": "TOP GYM",
+      "shortName": "TOP GYM",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-torpedo",
+      "brand": "DARKSIDE",
+      "name": "Torpedo",
+      "shortName": "Torpedo",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-tropic-ray",
+      "brand": "DARKSIDE",
+      "name": "Tropic Ray",
+      "shortName": "Tropic Ray",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-virgin-melon",
+      "brand": "DARKSIDE",
+      "name": "Virgin Melon",
+      "shortName": "Virgin Melon",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-virgin-peach",
+      "brand": "DARKSIDE",
+      "name": "Virgin Peach",
+      "shortName": "Virgin Peach",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-virgin-peach-2-0",
+      "brand": "DARKSIDE",
+      "name": "VIRGIN PEACH 2.0",
+      "shortName": "VIRGIN PEACH 2.0",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-waffle-shuffle",
+      "brand": "DARKSIDE",
+      "name": "WAFFLE SHUFFLE",
+      "shortName": "WAFFLE SHUFFLE",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-wild-forest",
+      "brand": "DARKSIDE",
+      "name": "Wild Forest",
+      "shortName": "Wild Forest",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "ds-wildberry",
+      "brand": "DARKSIDE",
+      "name": "Wildberry",
+      "shortName": "Wildberry",
+      "url": "https://darksideshop.com/brands/darkside/?products=tobacco"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-quince-",
+      "brand": "MUSTHAVE",
+      "name": "Айва (Quince)",
+      "shortName": "Quince",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-quince/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-alova-",
+      "brand": "MUSTHAVE",
+      "name": "Алоэ и розовая гуава (Alova)",
+      "shortName": "Alova",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-alova/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-pineapple-rings-",
+      "brand": "MUSTHAVE",
+      "name": "Ананасовый колечки (Pineapple Rings)",
+      "shortName": "Pineapple Rings",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-pineapple-rings/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-orange-team-",
+      "brand": "MUSTHAVE",
+      "name": "Апельсин и мандарин (Orange Team)",
+      "shortName": "Orange Team",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-orange-team/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-watermelon-",
+      "brand": "MUSTHAVE",
+      "name": "Арбуз (Watermelon)",
+      "shortName": "Watermelon",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-watermelon/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-araram-",
+      "brand": "MUSTHAVE",
+      "name": "Арбуз, виноград, чернослив (Araram)",
+      "shortName": "Araram",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-araram/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-banana-mama-",
+      "brand": "MUSTHAVE",
+      "name": "Банан (Banana Mama)",
+      "shortName": "Banana Mama",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-banana-mama/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-paradise-",
+      "brand": "MUSTHAVE",
+      "name": "Банан, кокос и карамель (Paradise)",
+      "shortName": "Paradise",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-paradise/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-barberry-candy-",
+      "brand": "MUSTHAVE",
+      "name": "Барбарисовые конфеты (Barberry Candy)",
+      "shortName": "Barberry Candy",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-barberry-candy/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-elderberry-",
+      "brand": "MUSTHAVE",
+      "name": "Бузина (Elderberry)",
+      "shortName": "Elderberry",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-elderberry/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-cinnamon-roll-",
+      "brand": "MUSTHAVE",
+      "name": "Булочка с корицей (Cinnamon Roll)",
+      "shortName": "Cinnamon Roll",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-cinnamon-roll/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-vanilla-cream-",
+      "brand": "MUSTHAVE",
+      "name": "Ванильный крем (Vanilla Cream)",
+      "shortName": "Vanilla Cream",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-vanilla-cream/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-ruby-grape-",
+      "brand": "MUSTHAVE",
+      "name": "Виноград и мята (Ruby Grape)",
+      "shortName": "Ruby Grape",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-ruby-grape/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-cherry-cola-",
+      "brand": "MUSTHAVE",
+      "name": "Вишнёвая кола (Cherry-Cola)",
+      "shortName": "Cherry-Cola",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-cherry-cola/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-cherry-juice-",
+      "brand": "MUSTHAVE",
+      "name": "Вишнёвый сок (Cherry Juice)",
+      "shortName": "Cherry Juice",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-cherry-juice/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-mulled-wine-",
+      "brand": "MUSTHAVE",
+      "name": "Глинтвейн (Mulled Wine)",
+      "shortName": "Mulled Wine",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-mulled-wine/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-holland-pie-",
+      "brand": "MUSTHAVE",
+      "name": "Голландский пирог (Holland Pie)",
+      "shortName": "Holland Pie",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-holland-pie/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-golybika-limon-myata-",
+      "brand": "MUSTHAVE",
+      "name": "Голубика, лимон и мята (Blue Blast)",
+      "shortName": "Blue Blast",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-golybika-limon-myata/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-red-bomb-",
+      "brand": "MUSTHAVE",
+      "name": "Гранат (Red Bomb)",
+      "shortName": "Red Bomb",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-red-bomb/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-garnet-grape-",
+      "brand": "MUSTHAVE",
+      "name": "Гранат и виноград (Garnet Grape)",
+      "shortName": "Garnet Grape",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-garnet-grape/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-grapefruit-",
+      "brand": "MUSTHAVE",
+      "name": "Грейпфрут (Grapefruit)",
+      "shortName": "Grapefruit",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-grapefruit/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-mad-pear-",
+      "brand": "MUSTHAVE",
+      "name": "Груша (Mad Pear)",
+      "shortName": "Mad Pear",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-mad-pear/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-grusha-limon-tarkhun-",
+      "brand": "MUSTHAVE",
+      "name": "Груша, лимон и тархун (Green Tonic)",
+      "shortName": "Green Tonic",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-grusha-limon-tarkhun/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-guanapapa-",
+      "brand": "MUSTHAVE",
+      "name": "Гуанабана и папайя (Guanapapa)",
+      "shortName": "Guanapapa",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-guanapapa/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-sweet-melon-",
+      "brand": "MUSTHAVE",
+      "name": "Дыня (Sweet Melon)",
+      "shortName": "Sweet Melon",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-sweet-melon/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-blackberry-",
+      "brand": "MUSTHAVE",
+      "name": "Ежевика (Blackberry)",
+      "shortName": "Blackberry",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-blackberry/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-strawberry-lychee-",
+      "brand": "MUSTHAVE",
+      "name": "Земляника и личи (Strawberry-Lychee)",
+      "shortName": "Strawberry-Lychee",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-strawberry-lychee/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-cacao-",
+      "brand": "MUSTHAVE",
+      "name": "Какао и маршмеллоу (Cacao)",
+      "shortName": "Cacao",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-cacao/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-caribbean-rum-",
+      "brand": "MUSTHAVE",
+      "name": "Карибский ром (Caribbean Rum)",
+      "shortName": "Caribbean Rum",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-caribbean-rum/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-kiwi-smoothie-",
+      "brand": "MUSTHAVE",
+      "name": "Киви-смузи (Kiwi Smoothie)",
+      "shortName": "Kiwi Smoothie",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-kiwi-smoothie/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-green-fizz-",
+      "brand": "MUSTHAVE",
+      "name": "Киви, кактус и абсент (Green Fizz)",
+      "shortName": "Green Fizz",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-green-fizz/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-kiwi-yabloko-laim-",
+      "brand": "MUSTHAVE",
+      "name": "Киви, яблоко и лайм (Greendizer)",
+      "shortName": "Greendizer",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-kiwi-yabloko-laim/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-nord-star-",
+      "brand": "MUSTHAVE",
+      "name": "Кислая вишня (Nord Star)",
+      "shortName": "Nord Star",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-nord-star/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-sour-apple-",
+      "brand": "MUSTHAVE",
+      "name": "Кислое яблоко (Sour Apple)",
+      "shortName": "Sour Apple",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-sour-apple/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-sour-tropic-",
+      "brand": "MUSTHAVE",
+      "name": "Кислые тропики (Sour Tropic)",
+      "shortName": "Sour Tropic",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-sour-tropic/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-sour-citrus-",
+      "brand": "MUSTHAVE",
+      "name": "Кислые цитрусы (Sour Citrus)",
+      "shortName": "Sour Citrus",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-sour-citrus/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-sour-berries-",
+      "brand": "MUSTHAVE",
+      "name": "Кислые ягоды (Sour Berries)",
+      "shortName": "Sour Berries",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-sour-berries/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-maple-pecan-",
+      "brand": "MUSTHAVE",
+      "name": "Кленовый пекан (Maple Pecan)",
+      "shortName": "Maple Pecan",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-maple-pecan/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-strawberry-",
+      "brand": "MUSTHAVE",
+      "name": "Клубника (Strawberry)",
+      "shortName": "Strawberry",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-strawberry/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-klybnika-limon-arbuz-",
+      "brand": "MUSTHAVE",
+      "name": "Клубника, лимон и арбуз (Red Rush)",
+      "shortName": "Red Rush",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-klybnika-limon-arbuz/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-klybnishnyi-sorbet-",
+      "brand": "MUSTHAVE",
+      "name": "Клубничный сорбет (Sorbetto)",
+      "shortName": "Sorbetto",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-klybnishnyi-sorbet/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-cranberry-",
+      "brand": "MUSTHAVE",
+      "name": "Клюква (Cranberry)",
+      "shortName": "Cranberry",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-cranberry/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-coconut-shake-",
+      "brand": "MUSTHAVE",
+      "name": "Кокосовый шейк (Coconut Shake)",
+      "shortName": "Coconut Shake",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-coconut-shake/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-cola-",
+      "brand": "MUSTHAVE",
+      "name": "Кола (Cola)",
+      "shortName": "Cola",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-cola/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-red-tea-",
+      "brand": "MUSTHAVE",
+      "name": "Красный чай (Red Tea)",
+      "shortName": "Red Tea",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-red-tea/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-cream-soda-",
+      "brand": "MUSTHAVE",
+      "name": "Крем сода (Cream Soda)",
+      "shortName": "Cream Soda",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-cream-soda/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-gooseberry-",
+      "brand": "MUSTHAVE",
+      "name": "Крыжовник (Gooseberry)",
+      "shortName": "Gooseberry",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-gooseberry/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-unicorn-treats-",
+      "brand": "MUSTHAVE",
+      "name": "Кукурузные палочки и безе (Unicorn Treats)",
+      "shortName": "Unicorn Treats",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-unicorn-treats/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-lemongrass-",
+      "brand": "MUSTHAVE",
+      "name": "Лемонграсс (Lemongrass)",
+      "shortName": "Lemongrass",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-lemongrass/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-baikal-",
+      "brand": "MUSTHAVE",
+      "name": "Лесные травы и хвоя (Baikal)",
+      "shortName": "Baikal",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-baikal/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-forest-berries-",
+      "brand": "MUSTHAVE",
+      "name": "Лесные ягоды (Forest Berries)",
+      "shortName": "Forest Berries",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-forest-berries/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-lemon-lime-",
+      "brand": "MUSTHAVE",
+      "name": "Лимон и лайм (Lemon-Lime)",
+      "shortName": "Lemon-Lime",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-lemon-lime/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-lemon-pie-",
+      "brand": "MUSTHAVE",
+      "name": "Лимонный пирог (Lemon Pie)",
+      "shortName": "Lemon Pie",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-lemon-pie/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-lemon-tonic-",
+      "brand": "MUSTHAVE",
+      "name": "Лимонный тоник (Lemon Tonic)",
+      "shortName": "Lemon Tonic",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-lemon-tonic/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-raspberry-",
+      "brand": "MUSTHAVE",
+      "name": "Малина (Raspberry)",
+      "shortName": "Raspberry",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-raspberry/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-mango-sling-",
+      "brand": "MUSTHAVE",
+      "name": "Манго-слинг (Mango Sling)",
+      "shortName": "Mango Sling",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-mango-sling/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-jumango-",
+      "brand": "MUSTHAVE",
+      "name": "Манго, малина и мёд (Jumango)",
+      "shortName": "Jumango",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-jumango/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-space-flavour-",
+      "brand": "MUSTHAVE",
+      "name": "Манго, маракуйя, личи и роза (Space Flavour)",
+      "shortName": "Space Flavour",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-space-flavour/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-mandarin-",
+      "brand": "MUSTHAVE",
+      "name": "Мандарин (Mandarin)",
+      "shortName": "Mandarin",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-mandarin/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-morocco-",
+      "brand": "MUSTHAVE",
+      "name": "Марокканский чай (Morocco)",
+      "shortName": "Morocco",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-morocco/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-marula-",
+      "brand": "MUSTHAVE",
+      "name": "Марула (Marula)",
+      "shortName": "Marula",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-marula/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-honey-holls-",
+      "brand": "MUSTHAVE",
+      "name": "Медовые леденцы (Honey Holls)",
+      "shortName": "Honey Holls",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-honey-holls/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-melonade-",
+      "brand": "MUSTHAVE",
+      "name": "Мелонад (Melonade)",
+      "shortName": "Melonade",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-melonade/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-milk-oolong-",
+      "brand": "MUSTHAVE",
+      "name": "Молочный улун (Milk Oolong)",
+      "shortName": "Milk Oolong",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-milk-oolong/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-pearl-pool-",
+      "brand": "MUSTHAVE",
+      "name": "Моринга и тропические фрукты (Pearl Pool)",
+      "shortName": "Pearl Pool",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-pearl-pool/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-ice-cream-",
+      "brand": "MUSTHAVE",
+      "name": "Мороженое (Ice Cream)",
+      "shortName": "Ice Cream",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-ice-cream/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-sea-backthorn-tea-",
+      "brand": "MUSTHAVE",
+      "name": "Облепиховый чай (Sea Buckthorn Tea)",
+      "shortName": "Sea Buckthorn Tea",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-sea-backthorn-tea/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-cucunade-",
+      "brand": "MUSTHAVE",
+      "name": "Огуречный лимонад (Cucunade)",
+      "shortName": "Cucunade",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-cucunade/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-ice-mint-",
+      "brand": "MUSTHAVE",
+      "name": "Освежающая мята (Ice Mint)",
+      "shortName": "Ice Mint",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-ice-mint/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-frosty-",
+      "brand": "MUSTHAVE",
+      "name": "Охлаждающий (Frosty)",
+      "shortName": "Frosty",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-frosty/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-sweet-peach-",
+      "brand": "MUSTHAVE",
+      "name": "Персик (Sweet Peach)",
+      "shortName": "Sweet Peach",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-sweet-peach/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-pinkman-",
+      "brand": "MUSTHAVE",
+      "name": "Пинкман (Pinkman)",
+      "shortName": "Pinkman",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-pinkman/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-prosecco-",
+      "brand": "MUSTHAVE",
+      "name": "Просекко (Prosecco)",
+      "shortName": "Prosecco",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-prosecco/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-milky-rice-",
+      "brand": "MUSTHAVE",
+      "name": "Рисовая каша (Milky Rice)",
+      "shortName": "Milky Rice",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-milky-rice/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-rocketman-",
+      "brand": "MUSTHAVE",
+      "name": "Рокетмен (Rocketman)",
+      "shortName": "Rocketman",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-rocketman/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-passion-plum-",
+      "brand": "MUSTHAVE",
+      "name": "Слива и маракуйя (Passion Plum)",
+      "shortName": "Passion Plum",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-passion-plum/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-candy-cow-",
+      "brand": "MUSTHAVE",
+      "name": "Сливочная карамель (Candy Cow)",
+      "shortName": "Candy Cow",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-candy-cow/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-smirodina-apilsin-vinograd-",
+      "brand": "MUSTHAVE",
+      "name": "Смородина, апельсин и виноград (Black Orange)",
+      "shortName": "Black Orange",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-smirodina-apilsin-vinograd/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-tropic-juice-",
+      "brand": "MUSTHAVE",
+      "name": "Тропический сок (Tropic Juice)",
+      "shortName": "Tropic Juice",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-tropic-juice/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-feijoa-",
+      "brand": "MUSTHAVE",
+      "name": "Фейхоа (Feijoa)",
+      "shortName": "Feijoa",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-feijoa/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-pistachio-",
+      "brand": "MUSTHAVE",
+      "name": "Фисташка (Pistachio)",
+      "shortName": "Pistachio",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-pistachio/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-pistachio-cake-",
+      "brand": "MUSTHAVE",
+      "name": "Фисташковый пирог (Pistachio Cake)",
+      "shortName": "Pistachio Cake",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-pistachio-cake/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-yolka-",
+      "brand": "MUSTHAVE",
+      "name": "Хвойный лес (Yolka)",
+      "shortName": "Yolka",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-yolka/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-citrus-spritz-",
+      "brand": "MUSTHAVE",
+      "name": "Цитрусовый коктейль (Citrus Spritz)",
+      "shortName": "Citrus Spritz",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-citrus-spritz/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-masala-tea-",
+      "brand": "MUSTHAVE",
+      "name": "Чай масла (Masala Tea)",
+      "shortName": "Masala Tea",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-masala-tea/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-earl-grey-",
+      "brand": "MUSTHAVE",
+      "name": "Чай Эрл Грей (Earl Grey)",
+      "shortName": "Earl Grey",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-earl-grey/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-black-currant-",
+      "brand": "MUSTHAVE",
+      "name": "Чёрная смородина (Black Currant)",
+      "shortName": "Black Currant",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-black-currant/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-blueberry-",
+      "brand": "MUSTHAVE",
+      "name": "Черника (Blueberry)",
+      "shortName": "Blueberry",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-blueberry/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-cheesecake-",
+      "brand": "MUSTHAVE",
+      "name": "Чизкейк (Cheesecake)",
+      "shortName": "Cheesecake",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-cheesecake/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-fizzy-dizzy-",
+      "brand": "MUSTHAVE",
+      "name": "Шампанское и барбарис (Fizzy Dizzy)",
+      "shortName": "Fizzy Dizzy",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-fizzy-dizzy/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-choco-mint-",
+      "brand": "MUSTHAVE",
+      "name": "Шоколад и мята (Choco-Mint)",
+      "shortName": "Choco-Mint",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-choco-mint/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-cookie-",
+      "brand": "MUSTHAVE",
+      "name": "Шоколадное печенье (Cookie)",
+      "shortName": "Cookie",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-cookie/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-violet-",
+      "brand": "MUSTHAVE",
+      "name": "Экзотический лимонад (Violet)",
+      "shortName": "Violet",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-violet/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-estragon-",
+      "brand": "MUSTHAVE",
+      "name": "Эстрагон (Estragon)",
+      "shortName": "Estragon",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-estragon/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-apple-drops-",
+      "brand": "MUSTHAVE",
+      "name": "Яблочные леденцы (Apple Drops)",
+      "shortName": "Apple Drops",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-apple-drops/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-charlotte-pie-",
+      "brand": "MUSTHAVE",
+      "name": "Яблочный пирог (Charlotte Pie)",
+      "shortName": "Charlotte Pie",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-charlotte-pie/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-berry-holls-",
+      "brand": "MUSTHAVE",
+      "name": "Ягодные леденцы (Berry Holls)",
+      "shortName": "Berry Holls",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-berry-holls/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-tipsy-",
+      "brand": "MUSTHAVE",
+      "name": "Ягодный коктейль (Tipsy)",
+      "shortName": "Tipsy",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-tipsy/"
+    },
+    {
+      "id": "mh--tabak-dlya-kalyana-musthave-berry-mors-",
+      "brand": "MUSTHAVE",
+      "name": "Ягодный морс (Berry Mors)",
+      "shortName": "Berry Mors",
+      "url": "https://musthave.ru/tabak-dlya-kalyana-musthave-berry-mors/"
+    }
+  ]
+}

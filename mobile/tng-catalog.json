@@ -1,0 +1,2492 @@
+{
+  "checkedAt": "2026-09-20",
+  "sources": [
+    "https://tangierslounge.ru/",
+    "https://tangierslounge.ru/franchise/",
+    "https://www.tangiers.us/flavors",
+    "https://dogma-tobacco.ru/catalog/aromaticheskaya-lineyka-3",
+    "https://bonche.ru/products",
+    "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view",
+    "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+  ],
+  "products": [
+    {
+      "id": "azure-1",
+      "brand": "Azure",
+      "name": "Alaskan Ice",
+      "shortName": "Alaskan Ice",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-2",
+      "brand": "Azure",
+      "name": "Blueberry Muffin",
+      "shortName": "Blueberry Muffin",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-3",
+      "brand": "Azure",
+      "name": "Carolina Peach",
+      "shortName": "Carolina Peach",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-24",
+      "brand": "Azure",
+      "name": "Cherry Muffin",
+      "shortName": "Cherry Muffin",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-4",
+      "brand": "Azure",
+      "name": "Chocolate Mint",
+      "shortName": "Chocolate Mint",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-5",
+      "brand": "Azure",
+      "name": "Cinnamon Cookies",
+      "shortName": "Cinnamon Cookies",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-26",
+      "brand": "Azure",
+      "name": "Cocomania",
+      "shortName": "Cocomania",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-6",
+      "brand": "Azure",
+      "name": "Cosmos",
+      "shortName": "Cosmos",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-7",
+      "brand": "Azure",
+      "name": "Grow a Pear",
+      "shortName": "Grow a Pear",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-8",
+      "brand": "Azure",
+      "name": "Hokkaido Melon",
+      "shortName": "Hokkaido Melon",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-9",
+      "brand": "Azure",
+      "name": "Lemon Muffin",
+      "shortName": "Lemon Muffin",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-10",
+      "brand": "Azure",
+      "name": "Lemongrass",
+      "shortName": "Lemongrass",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-11",
+      "brand": "Azure",
+      "name": "Lime",
+      "shortName": "Lime",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-12",
+      "brand": "Azure",
+      "name": "Mango Cheesecake",
+      "shortName": "Mango Cheesecake",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-13",
+      "brand": "Azure",
+      "name": "Matcha Mint",
+      "shortName": "Matcha Mint",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-14",
+      "brand": "Azure",
+      "name": "MexiCola",
+      "shortName": "MexiCola",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-15",
+      "brand": "Azure",
+      "name": "Moroccan Tea",
+      "shortName": "Moroccan Tea",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-16",
+      "brand": "Azure",
+      "name": "Morocco Mentha",
+      "shortName": "Morocco Mentha",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-17",
+      "brand": "Azure",
+      "name": "Napa Grape",
+      "shortName": "Napa Grape",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-18",
+      "brand": "Azure",
+      "name": "Rio Mint",
+      "shortName": "Rio Mint",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-19",
+      "brand": "Azure",
+      "name": "Route 66",
+      "shortName": "Route 66",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-20",
+      "brand": "Azure",
+      "name": "Royal Raspberry",
+      "shortName": "Royal Raspberry",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-21",
+      "brand": "Azure",
+      "name": "San Diego Sunset",
+      "shortName": "San Diego Sunset",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-22",
+      "brand": "Azure",
+      "name": "Strawberry Passion",
+      "shortName": "Strawberry Passion",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-25",
+      "brand": "Azure",
+      "name": "Ultra Violet",
+      "shortName": "Ultra Violet",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "azure-23",
+      "brand": "Azure",
+      "name": "Watermelon",
+      "shortName": "Watermelon",
+      "url": "https://www.sanidad.gob.es/en/areas/promocionPrevencion/tabaco/industria/docs/Productos_Tabaco_Espana.pdf"
+    },
+    {
+      "id": "blansh-16",
+      "brand": "BLANSH",
+      "name": "Ананасовый экспресс",
+      "shortName": "Ананасовый экспресс",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-1",
+      "brand": "BLANSH",
+      "name": "Блэккурант",
+      "shortName": "Блэккурант",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-7",
+      "brand": "BLANSH",
+      "name": "Варёная кукуруза",
+      "shortName": "Варёная кукуруза",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-14",
+      "brand": "BLANSH",
+      "name": "Виноградная гроздь",
+      "shortName": "Виноградная гроздь",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-8",
+      "brand": "BLANSH",
+      "name": "Вишнёвый сад",
+      "shortName": "Вишнёвый сад",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-11",
+      "brand": "BLANSH",
+      "name": "Грейпфрутовый сок",
+      "shortName": "Грейпфрутовый сок",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-17",
+      "brand": "BLANSH",
+      "name": "Карамельное чтиво",
+      "shortName": "Карамельное чтиво",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-4",
+      "brand": "BLANSH",
+      "name": "Киви краш",
+      "shortName": "Киви краш",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-5",
+      "brand": "BLANSH",
+      "name": "Клубничка 18+",
+      "shortName": "Клубничка 18+",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-9",
+      "brand": "BLANSH",
+      "name": "Клюквенный морс",
+      "shortName": "Клюквенный морс",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-18",
+      "brand": "BLANSH",
+      "name": "Лайм тайм",
+      "shortName": "Лайм тайм",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-15",
+      "brand": "BLANSH",
+      "name": "Ленинградская пышка",
+      "shortName": "Ленинградская пышка",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-6",
+      "brand": "BLANSH",
+      "name": "Лимонный фреш",
+      "shortName": "Лимонный фреш",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-3",
+      "brand": "BLANSH",
+      "name": "Мангомания",
+      "shortName": "Мангомания",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-10",
+      "brand": "BLANSH",
+      "name": "Маракуйя",
+      "shortName": "Маракуйя",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-19",
+      "brand": "BLANSH",
+      "name": "Персик в личку",
+      "shortName": "Персик в личку",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-2",
+      "brand": "BLANSH",
+      "name": "Сливки 33%",
+      "shortName": "Сливки 33%",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-12",
+      "brand": "BLANSH",
+      "name": "Яблоко наливное",
+      "shortName": "Яблоко наливное",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-13",
+      "brand": "BLANSH",
+      "name": "Ягода малинка",
+      "shortName": "Ягода малинка",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "blansh-20",
+      "brand": "BLANSH",
+      "name": "Ягодный каркаде",
+      "shortName": "Ягодный каркаде",
+      "url": "https://tangierslounge.ru/franchise/"
+    },
+    {
+      "id": "bonche-845351183042",
+      "brand": "Bonche",
+      "name": "Азиатский персик",
+      "shortName": "Азиатский персик",
+      "url": "https://bonche.ru/products/tproduct/2056530681-845351183042-aziatskii-persik"
+    },
+    {
+      "id": "bonche-258121422202",
+      "brand": "Bonche",
+      "name": "Ананас",
+      "shortName": "Ананас",
+      "url": "https://bonche.ru/products/tproduct/2056530681-258121422202-ananas"
+    },
+    {
+      "id": "bonche-279459564782",
+      "brand": "Bonche",
+      "name": "Апельсин",
+      "shortName": "Апельсин",
+      "url": "https://bonche.ru/products/tproduct/2056530681-279459564782-apelsin"
+    },
+    {
+      "id": "bonche-637090822352",
+      "brand": "Bonche",
+      "name": "Арахис",
+      "shortName": "Арахис",
+      "url": "https://bonche.ru/products/tproduct/2056530681-637090822352-arahis"
+    },
+    {
+      "id": "bonche-679955864102",
+      "brand": "Bonche",
+      "name": "Арахис в карамели",
+      "shortName": "Арахис в карамели",
+      "url": "https://bonche.ru/products/tproduct/2056530681-679955864102-arahis-v-karameli"
+    },
+    {
+      "id": "bonche-857458130392",
+      "brand": "Bonche",
+      "name": "База",
+      "shortName": "База",
+      "url": "https://bonche.ru/products/tproduct/2056530681-857458130392-baza"
+    },
+    {
+      "id": "bonche-870435519392",
+      "brand": "Bonche",
+      "name": "Базилик",
+      "shortName": "Базилик",
+      "url": "https://bonche.ru/products/tproduct/2056530681-870435519392-bazilik"
+    },
+    {
+      "id": "bonche-119417377552",
+      "brand": "Bonche",
+      "name": "Барбарис",
+      "shortName": "Барбарис",
+      "url": "https://bonche.ru/products/tproduct/2056530681-119417377552-barbaris"
+    },
+    {
+      "id": "bonche-188466040742",
+      "brand": "Bonche",
+      "name": "Бергамот",
+      "shortName": "Бергамот",
+      "url": "https://bonche.ru/products/tproduct/2056530681-188466040742-bergamot"
+    },
+    {
+      "id": "bonche-927233936822",
+      "brand": "Bonche",
+      "name": "Брауни",
+      "shortName": "Брауни",
+      "url": "https://bonche.ru/products/tproduct/2056530681-927233936822-brauni"
+    },
+    {
+      "id": "bonche-577743342922",
+      "brand": "Bonche",
+      "name": "Ваниль",
+      "shortName": "Ваниль",
+      "url": "https://bonche.ru/products/tproduct/2056530681-577743342922-vanil"
+    },
+    {
+      "id": "bonche-787668023723",
+      "brand": "Bonche",
+      "name": "Вафли",
+      "shortName": "Вафли",
+      "url": "https://bonche.ru/tproduct/858010279-787668023723-vafli"
+    },
+    {
+      "id": "bonche-232286008882",
+      "brand": "Bonche",
+      "name": "Виски",
+      "shortName": "Виски",
+      "url": "https://bonche.ru/products/tproduct/2056530681-232286008882-viski"
+    },
+    {
+      "id": "bonche-640581374962",
+      "brand": "Bonche",
+      "name": "Вишня",
+      "shortName": "Вишня",
+      "url": "https://bonche.ru/products/tproduct/2056530681-640581374962-vishnya"
+    },
+    {
+      "id": "bonche-772343815092",
+      "brand": "Bonche",
+      "name": "Гвоздика",
+      "shortName": "Гвоздика",
+      "url": "https://bonche.ru/products/tproduct/2056530681-772343815092-gvozdika"
+    },
+    {
+      "id": "bonche-339490767412",
+      "brand": "Bonche",
+      "name": "Гранат",
+      "shortName": "Гранат",
+      "url": "https://bonche.ru/products/tproduct/2056530681-339490767412-granat"
+    },
+    {
+      "id": "bonche-242053378262",
+      "brand": "Bonche",
+      "name": "Грейпфрут",
+      "shortName": "Грейпфрут",
+      "url": "https://bonche.ru/products/tproduct/2056530681-242053378262-greipfrut"
+    },
+    {
+      "id": "bonche-875877894542",
+      "brand": "Bonche",
+      "name": "Груша",
+      "shortName": "Груша",
+      "url": "https://bonche.ru/products/tproduct/2056530681-875877894542-grusha"
+    },
+    {
+      "id": "bonche-627820049222",
+      "brand": "Bonche",
+      "name": "Груша с корицей",
+      "shortName": "Груша с корицей",
+      "url": "https://bonche.ru/products/tproduct/2056530681-627820049222-grusha-s-koritsei"
+    },
+    {
+      "id": "bonche-794682192643",
+      "brand": "Bonche",
+      "name": "Драконий фрукт",
+      "shortName": "Драконий фрукт",
+      "url": "https://bonche.ru/tproduct/858010279-794682192643-drakonii-frukt"
+    },
+    {
+      "id": "bonche-477305848382",
+      "brand": "Bonche",
+      "name": "Земляника",
+      "shortName": "Земляника",
+      "url": "https://bonche.ru/products/tproduct/2056530681-477305848382-zemlyanika"
+    },
+    {
+      "id": "bonche-443390402522",
+      "brand": "Bonche",
+      "name": "Имбирь",
+      "shortName": "Имбирь",
+      "url": "https://bonche.ru/products/tproduct/2056530681-443390402522-imbir"
+    },
+    {
+      "id": "bonche-799824266592",
+      "brand": "Bonche",
+      "name": "Ирга",
+      "shortName": "Ирга",
+      "url": "https://bonche.ru/products/tproduct/2056530681-799824266592-irga"
+    },
+    {
+      "id": "bonche-263791512902",
+      "brand": "Bonche",
+      "name": "Карамель",
+      "shortName": "Карамель",
+      "url": "https://bonche.ru/products/tproduct/2056530681-263791512902-karamel"
+    },
+    {
+      "id": "bonche-657971253822",
+      "brand": "Bonche",
+      "name": "Киви",
+      "shortName": "Киви",
+      "url": "https://bonche.ru/products/tproduct/2056530681-657971253822-kivi"
+    },
+    {
+      "id": "bonche-275626811182",
+      "brand": "Bonche",
+      "name": "Клубника",
+      "shortName": "Клубника",
+      "url": "https://bonche.ru/products/tproduct/2056530681-275626811182-klubnika"
+    },
+    {
+      "id": "bonche-615015599402",
+      "brand": "Bonche",
+      "name": "Кокос",
+      "shortName": "Кокос",
+      "url": "https://bonche.ru/products/tproduct/2056530681-615015599402-kokos"
+    },
+    {
+      "id": "bonche-214203789972",
+      "brand": "Bonche",
+      "name": "Коктейль Гимлет",
+      "shortName": "Коктейль Гимлет",
+      "url": "https://bonche.ru/products/tproduct/2056530681-214203789972-kokteil-gimlet"
+    },
+    {
+      "id": "bonche-516097010532",
+      "brand": "Bonche",
+      "name": "Коктейль Кловер Клаб",
+      "shortName": "Коктейль Кловер Клаб",
+      "url": "https://bonche.ru/products/tproduct/2056530681-516097010532-kokteil-klover-klab"
+    },
+    {
+      "id": "bonche-214261732392",
+      "brand": "Bonche",
+      "name": "Коктейль Мятный джулеп",
+      "shortName": "Коктейль Мятный джулеп",
+      "url": "https://bonche.ru/products/tproduct/2056530681-214261732392-kokteil-myatnii-dzhulep"
+    },
+    {
+      "id": "bonche-368652393052",
+      "brand": "Bonche",
+      "name": "Коктейль Сингапурский слинг",
+      "shortName": "Коктейль Сингапурский слинг",
+      "url": "https://bonche.ru/products/tproduct/2056530681-368652393052-kokteil-singapurskii-sling"
+    },
+    {
+      "id": "bonche-950339795782",
+      "brand": "Bonche",
+      "name": "Коньяк",
+      "shortName": "Коньяк",
+      "url": "https://bonche.ru/products/tproduct/2056530681-950339795782-konyak"
+    },
+    {
+      "id": "bonche-651411112432",
+      "brand": "Bonche",
+      "name": "Кофе",
+      "shortName": "Кофе",
+      "url": "https://bonche.ru/products/tproduct/2056530681-651411112432-kofe"
+    },
+    {
+      "id": "bonche-791098600622",
+      "brand": "Bonche",
+      "name": "Красное вино",
+      "shortName": "Красное вино",
+      "url": "https://bonche.ru/products/tproduct/2056530681-791098600622-krasnoe-vino"
+    },
+    {
+      "id": "bonche-329068297092",
+      "brand": "Bonche",
+      "name": "Кукуруза",
+      "shortName": "Кукуруза",
+      "url": "https://bonche.ru/products/tproduct/2056530681-329068297092-kukuruza"
+    },
+    {
+      "id": "bonche-386319384112",
+      "brand": "Bonche",
+      "name": "Кунжут",
+      "shortName": "Кунжут",
+      "url": "https://bonche.ru/products/tproduct/2056530681-386319384112-kunzhut"
+    },
+    {
+      "id": "bonche-312633087712",
+      "brand": "Bonche",
+      "name": "Лаванда",
+      "shortName": "Лаванда",
+      "url": "https://bonche.ru/products/tproduct/2056530681-312633087712-lavanda"
+    },
+    {
+      "id": "bonche-412077491682",
+      "brand": "Bonche",
+      "name": "Лемонграсс",
+      "shortName": "Лемонграсс",
+      "url": "https://bonche.ru/products/tproduct/2056530681-412077491682-lemongrass"
+    },
+    {
+      "id": "bonche-533908786052",
+      "brand": "Bonche",
+      "name": "Летний фреш",
+      "shortName": "Летний фреш",
+      "url": "https://bonche.ru/products/tproduct/2056530681-533908786052-letnii-fresh"
+    },
+    {
+      "id": "bonche-130599065252",
+      "brand": "Bonche",
+      "name": "Лимон",
+      "shortName": "Лимон",
+      "url": "https://bonche.ru/products/tproduct/2056530681-130599065252-limon"
+    },
+    {
+      "id": "bonche-606314079732",
+      "brand": "Bonche",
+      "name": "Личи",
+      "shortName": "Личи",
+      "url": "https://bonche.ru/products/tproduct/2056530681-606314079732-lichi"
+    },
+    {
+      "id": "bonche-473200756892",
+      "brand": "Bonche",
+      "name": "Малина",
+      "shortName": "Малина",
+      "url": "https://bonche.ru/products/tproduct/2056530681-473200756892-malina"
+    },
+    {
+      "id": "bonche-691058599582",
+      "brand": "Bonche",
+      "name": "Малиновая конфета",
+      "shortName": "Малиновая конфета",
+      "url": "https://bonche.ru/products/tproduct/2056530681-691058599582-malinovaya-konfeta"
+    },
+    {
+      "id": "bonche-858576364533",
+      "brand": "Bonche",
+      "name": "Малиновое варенье",
+      "shortName": "Малиновое варенье",
+      "url": "https://bonche.ru/tproduct/858010279-858576364533-malinovoe-varene"
+    },
+    {
+      "id": "bonche-267124237182",
+      "brand": "Bonche",
+      "name": "Манго",
+      "shortName": "Манго",
+      "url": "https://bonche.ru/products/tproduct/2056530681-267124237182-mango"
+    },
+    {
+      "id": "bonche-680101249042",
+      "brand": "Bonche",
+      "name": "Маракуйя",
+      "shortName": "Маракуйя",
+      "url": "https://bonche.ru/products/tproduct/2056530681-680101249042-marakuiya"
+    },
+    {
+      "id": "bonche-844841298972",
+      "brand": "Bonche",
+      "name": "Марципан",
+      "shortName": "Марципан",
+      "url": "https://bonche.ru/products/tproduct/2056530681-844841298972-martsipan"
+    },
+    {
+      "id": "bonche-225394351312",
+      "brand": "Bonche",
+      "name": "Мёд",
+      "shortName": "Мёд",
+      "url": "https://bonche.ru/products/tproduct/2056530681-225394351312-myod"
+    },
+    {
+      "id": "bonche-910328103372",
+      "brand": "Bonche",
+      "name": "Медовая курага",
+      "shortName": "Медовая курага",
+      "url": "https://bonche.ru/products/tproduct/2056530681-910328103372-medovaya-kuraga"
+    },
+    {
+      "id": "bonche-182637854552",
+      "brand": "Bonche",
+      "name": "Мелисса",
+      "shortName": "Мелисса",
+      "url": "https://bonche.ru/products/tproduct/2056530681-182637854552-melissa"
+    },
+    {
+      "id": "bonche-492111326372",
+      "brand": "Bonche",
+      "name": "Оливка",
+      "shortName": "Оливка",
+      "url": "https://bonche.ru/products/tproduct/2056530681-492111326372-olivka"
+    },
+    {
+      "id": "bonche-585377586992",
+      "brand": "Bonche",
+      "name": "Печенье",
+      "shortName": "Печенье",
+      "url": "https://bonche.ru/products/tproduct/2056530681-585377586992-pechene"
+    },
+    {
+      "id": "bonche-541512714213",
+      "brand": "Bonche",
+      "name": "Пломбир",
+      "shortName": "Пломбир",
+      "url": "https://bonche.ru/tproduct/858010279-541512714213-plombir"
+    },
+    {
+      "id": "bonche-484009523032",
+      "brand": "Bonche",
+      "name": "Ром",
+      "shortName": "Ром",
+      "url": "https://bonche.ru/products/tproduct/2056530681-484009523032-rom"
+    },
+    {
+      "id": "bonche-644796066262",
+      "brand": "Bonche",
+      "name": "Салями",
+      "shortName": "Салями",
+      "url": "https://bonche.ru/products/tproduct/2056530681-644796066262-salyami"
+    },
+    {
+      "id": "bonche-484344318722",
+      "brand": "Bonche",
+      "name": "Тёмный шоколад",
+      "shortName": "Тёмный шоколад",
+      "url": "https://bonche.ru/products/tproduct/2056530681-484344318722-tyomnii-shokolad"
+    },
+    {
+      "id": "bonche-874079049042",
+      "brand": "Bonche",
+      "name": "Тропический ром",
+      "shortName": "Тропический ром",
+      "url": "https://bonche.ru/products/tproduct/2056530681-874079049042-tropicheskii-rom"
+    },
+    {
+      "id": "bonche-734704970032",
+      "brand": "Bonche",
+      "name": "Фруктовый нектар",
+      "shortName": "Фруктовый нектар",
+      "url": "https://bonche.ru/products/tproduct/2056530681-734704970032-fruktovii-nektar"
+    },
+    {
+      "id": "bonche-913819128832",
+      "brand": "Bonche",
+      "name": "Цветочная черника",
+      "shortName": "Цветочная черника",
+      "url": "https://bonche.ru/products/tproduct/2056530681-913819128832-tsvetochnaya-chernika"
+    },
+    {
+      "id": "bonche-739494838872",
+      "brand": "Bonche",
+      "name": "Чаша «Плоское дно»",
+      "shortName": "Чаша «Плоское дно»",
+      "url": "https://bonche.ru/products/tproduct/2056530681-739494838872-chasha-ploskoe-dno"
+    },
+    {
+      "id": "bonche-351169175362",
+      "brand": "Bonche",
+      "name": "Чаша «Турка»",
+      "shortName": "Чаша «Турка»",
+      "url": "https://bonche.ru/products/tproduct/2056530681-351169175362-chasha-turka"
+    },
+    {
+      "id": "bonche-401492653342",
+      "brand": "Bonche",
+      "name": "Чаша «Фанел»",
+      "shortName": "Чаша «Фанел»",
+      "url": "https://bonche.ru/products/tproduct/2056530681-401492653342-chasha-fanel"
+    },
+    {
+      "id": "bonche-396019163992",
+      "brand": "Bonche",
+      "name": "Чёрная смородина",
+      "shortName": "Чёрная смородина",
+      "url": "https://bonche.ru/products/tproduct/2056530681-396019163992-chyornaya-smorodina"
+    },
+    {
+      "id": "bonche-146482197442",
+      "brand": "Bonche",
+      "name": "Черника",
+      "shortName": "Черника",
+      "url": "https://bonche.ru/products/tproduct/2056530681-146482197442-chernika"
+    },
+    {
+      "id": "bonche-687752942142",
+      "brand": "Bonche",
+      "name": "Черничный рожок",
+      "shortName": "Черничный рожок",
+      "url": "https://bonche.ru/products/tproduct/2056530681-687752942142-chernichnii-rozhok"
+    },
+    {
+      "id": "bonche-527031332142",
+      "brand": "Bonche",
+      "name": "Чернослив",
+      "shortName": "Чернослив",
+      "url": "https://bonche.ru/products/tproduct/2056530681-527031332142-chernosliv"
+    },
+    {
+      "id": "bonche-487008881682",
+      "brand": "Bonche",
+      "name": "Чизкейк",
+      "shortName": "Чизкейк",
+      "url": "https://bonche.ru/products/tproduct/2056530681-487008881682-chizkeik"
+    },
+    {
+      "id": "bonche-534679187252",
+      "brand": "Bonche",
+      "name": "Шило «Лист»",
+      "shortName": "Шило «Лист»",
+      "url": "https://bonche.ru/products/tproduct/2056530681-534679187252-shilo-list"
+    },
+    {
+      "id": "bonche-896760406212",
+      "brand": "Bonche",
+      "name": "Шило «Рука»",
+      "shortName": "Шило «Рука»",
+      "url": "https://bonche.ru/products/tproduct/2056530681-896760406212-shilo-ruka"
+    },
+    {
+      "id": "bonche-209513747372",
+      "brand": "Bonche",
+      "name": "Шоколадный торт",
+      "shortName": "Шоколадный торт",
+      "url": "https://bonche.ru/products/tproduct/2056530681-209513747372-shokoladnii-tort"
+    },
+    {
+      "id": "bonche-513279967932",
+      "brand": "Bonche",
+      "name": "Экзотик смузи",
+      "shortName": "Экзотик смузи",
+      "url": "https://bonche.ru/products/tproduct/2056530681-513279967932-ekzotik-smuzi"
+    },
+    {
+      "id": "bonche-186462925092",
+      "brand": "Bonche",
+      "name": "Яблочный пирог",
+      "shortName": "Яблочный пирог",
+      "url": "https://bonche.ru/products/tproduct/2056530681-186462925092-yablochnii-pirog"
+    },
+    {
+      "id": "bonche-443526061652",
+      "brand": "Bonche",
+      "name": "Ягодные леденцы",
+      "shortName": "Ягодные леденцы",
+      "url": "https://bonche.ru/products/tproduct/2056530681-443526061652-yagodnie-ledentsi"
+    },
+    {
+      "id": "bonche-475871485742",
+      "brand": "Bonche",
+      "name": "Ягодный купаж",
+      "shortName": "Ягодный купаж",
+      "url": "https://bonche.ru/products/tproduct/2056530681-475871485742-yagodnii-kupazh"
+    },
+    {
+      "id": "bonche-473922621932",
+      "brand": "Bonche",
+      "name": "Desvall",
+      "shortName": "Desvall",
+      "url": "https://bonche.ru/products/tproduct/2056530681-473922621932-desvall"
+    },
+    {
+      "id": "dogma-ananasovaya-salsa-22",
+      "brand": "Dogma",
+      "name": "Ананасовая сальса",
+      "shortName": "Ананасовая сальса",
+      "url": "https://dogma-tobacco.ru/products/ananasovaya-salsa-22"
+    },
+    {
+      "id": "dogma-apelsinovy-yupi-25",
+      "brand": "Dogma",
+      "name": "Апельсиновый Юпи",
+      "shortName": "Апельсиновый Юпи",
+      "url": "https://dogma-tobacco.ru/products/apelsinovy-yupi-25"
+    },
+    {
+      "id": "dogma-banan-zhelty-2",
+      "brand": "Dogma",
+      "name": "Банан жёлтый",
+      "shortName": "Банан жёлтый",
+      "url": "https://dogma-tobacco.ru/products/banan-zhelty-2"
+    },
+    {
+      "id": "dogma-beloe-polusladkoe-23",
+      "brand": "Dogma",
+      "name": "Белое полусладкое",
+      "shortName": "Белое полусладкое",
+      "url": "https://dogma-tobacco.ru/products/beloe-polusladkoe-23"
+    },
+    {
+      "id": "dogma-dvoynoy-arbuz-24",
+      "brand": "Dogma",
+      "name": "Двойной арбуз",
+      "shortName": "Двойной арбуз",
+      "url": "https://dogma-tobacco.ru/products/dvoynoy-arbuz-24"
+    },
+    {
+      "id": "dogma-kitayskaya-grusha-26",
+      "brand": "Dogma",
+      "name": "Китайская груша",
+      "shortName": "Китайская груша",
+      "url": "https://dogma-tobacco.ru/products/kitayskaya-grusha-26"
+    },
+    {
+      "id": "dogma-klubyana-27",
+      "brand": "Dogma",
+      "name": "Клубяна",
+      "shortName": "Клубяна",
+      "url": "https://dogma-tobacco.ru/products/klubyana-27"
+    },
+    {
+      "id": "dogma-kokosovaya-samosa-28",
+      "brand": "Dogma",
+      "name": "Кокосовая самоса",
+      "shortName": "Кокосовая самоса",
+      "url": "https://dogma-tobacco.ru/products/kokosovaya-samosa-28"
+    },
+    {
+      "id": "dogma-lemon-drops-29",
+      "brand": "Dogma",
+      "name": "Лемон дропс",
+      "shortName": "Лемон дропс",
+      "url": "https://dogma-tobacco.ru/products/lemon-drops-29"
+    },
+    {
+      "id": "dogma-lichi-30",
+      "brand": "Dogma",
+      "name": "Личи",
+      "shortName": "Личи",
+      "url": "https://dogma-tobacco.ru/products/lichi-30"
+    },
+    {
+      "id": "dogma-malinovy-kompot-31",
+      "brand": "Dogma",
+      "name": "Малиновый компот",
+      "shortName": "Малиновый компот",
+      "url": "https://dogma-tobacco.ru/products/malinovy-kompot-31"
+    },
+    {
+      "id": "dogma-mishki-gammi-38",
+      "brand": "Dogma",
+      "name": "Мишки Гамми",
+      "shortName": "Мишки Гамми",
+      "url": "https://dogma-tobacco.ru/products/mishki-gammi-38"
+    },
+    {
+      "id": "dogma-orbitkidz-32",
+      "brand": "Dogma",
+      "name": "Орбиткидз",
+      "shortName": "Орбиткидз",
+      "url": "https://dogma-tobacco.ru/products/orbitkidz-32"
+    },
+    {
+      "id": "dogma-plov-33",
+      "brand": "Dogma",
+      "name": "Плов",
+      "shortName": "Плов",
+      "url": "https://dogma-tobacco.ru/products/plov-33"
+    },
+    {
+      "id": "dogma-sakura-34",
+      "brand": "Dogma",
+      "name": "Сакура",
+      "shortName": "Сакура",
+      "url": "https://dogma-tobacco.ru/products/sakura-34"
+    },
+    {
+      "id": "dogma-sliva-krasnaya-39",
+      "brand": "Dogma",
+      "name": "Слива красная",
+      "shortName": "Слива красная",
+      "url": "https://dogma-tobacco.ru/products/sliva-krasnaya-39"
+    },
+    {
+      "id": "dogma-smorodina-chernaya-40",
+      "brand": "Dogma",
+      "name": "Смородина чёрная",
+      "shortName": "Смородина чёрная",
+      "url": "https://dogma-tobacco.ru/products/smorodina-chernaya-40"
+    },
+    {
+      "id": "dogma-churchhela-35",
+      "brand": "Dogma",
+      "name": "Чурчхела",
+      "shortName": "Чурчхела",
+      "url": "https://dogma-tobacco.ru/products/churchhela-35"
+    },
+    {
+      "id": "dogma-energetik-m-150-36",
+      "brand": "Dogma",
+      "name": "Энергетик М-150",
+      "shortName": "Энергетик М-150",
+      "url": "https://dogma-tobacco.ru/products/energetik-m-150-36"
+    },
+    {
+      "id": "dogma-yablochny-punsh-37",
+      "brand": "Dogma",
+      "name": "Яблочный пунш",
+      "shortName": "Яблочный пунш",
+      "url": "https://dogma-tobacco.ru/products/yablochny-punsh-37"
+    },
+    {
+      "id": "tangiers-birquq-105",
+      "brand": "Tangiers",
+      "name": "Birquq · \"Now With Melon\"",
+      "shortName": "\"Now With Melon\"",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-birquq-112",
+      "brand": "Tangiers",
+      "name": "Birquq · Aussie Juice",
+      "shortName": "Aussie Juice",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-birquq-103",
+      "brand": "Tangiers",
+      "name": "Birquq · Foreplay On The Peach",
+      "shortName": "Foreplay On The Peach",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-birquq-95",
+      "brand": "Tangiers",
+      "name": "Birquq · Grapefruit",
+      "shortName": "Grapefruit",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-birquq-35",
+      "brand": "Tangiers",
+      "name": "Birquq · Green Tea",
+      "shortName": "Green Tea",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-birquq-106",
+      "brand": "Tangiers",
+      "name": "Birquq · Hacitragus",
+      "shortName": "Hacitragus",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-birquq-78",
+      "brand": "Tangiers",
+      "name": "Birquq · Hotchata",
+      "shortName": "Hotchata",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-birquq-61",
+      "brand": "Tangiers",
+      "name": "Birquq · Indian Summer",
+      "shortName": "Indian Summer",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-birquq-34",
+      "brand": "Tangiers",
+      "name": "Birquq · It&#x27;s Like That One Breakfast Cereal",
+      "shortName": "It&#x27;s Like That One Breakfast Cereal",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-birquq-100",
+      "brand": "Tangiers",
+      "name": "Birquq · It&#x27;s Like That Other Breakfast Cereal",
+      "shortName": "It&#x27;s Like That Other Breakfast Cereal",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-birquq-11",
+      "brand": "Tangiers",
+      "name": "Birquq · Kashmir Cherry",
+      "shortName": "Kashmir Cherry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-birquq-38",
+      "brand": "Tangiers",
+      "name": "Birquq · Kashmir Peach",
+      "shortName": "Kashmir Peach",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-birquq-74",
+      "brand": "Tangiers",
+      "name": "Birquq · Lemon-Lime",
+      "shortName": "Lemon-Lime",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-birquq-102",
+      "brand": "Tangiers",
+      "name": "Birquq · Little Purple Stuff",
+      "shortName": "Little Purple Stuff",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-birquq-94",
+      "brand": "Tangiers",
+      "name": "Birquq · Maraschino Cherry",
+      "shortName": "Maraschino Cherry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-birquq-111",
+      "brand": "Tangiers",
+      "name": "Birquq · Ololiuqui",
+      "shortName": "Ololiuqui",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-birquq-33",
+      "brand": "Tangiers",
+      "name": "Birquq · Opuntia Pear",
+      "shortName": "Opuntia Pear",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-birquq-10",
+      "brand": "Tangiers",
+      "name": "Birquq · Orange Soda",
+      "shortName": "Orange Soda",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-birquq-101",
+      "brand": "Tangiers",
+      "name": "Birquq · Panic Punch",
+      "shortName": "Panic Punch",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-birquq-52",
+      "brand": "Tangiers",
+      "name": "Birquq · Peach Cobbler",
+      "shortName": "Peach Cobbler",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=5"
+    },
+    {
+      "id": "tangiers-birquq-90",
+      "brand": "Tangiers",
+      "name": "Birquq · Peach Iced Tea",
+      "shortName": "Peach Iced Tea",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=8"
+    },
+    {
+      "id": "tangiers-birquq-116",
+      "brand": "Tangiers",
+      "name": "Birquq · Pikina Sun",
+      "shortName": "Pikina Sun",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-birquq-104",
+      "brand": "Tangiers",
+      "name": "Birquq · Pinepas",
+      "shortName": "Pinepas",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-birquq-108",
+      "brand": "Tangiers",
+      "name": "Birquq · Rangoon Sunrise",
+      "shortName": "Rangoon Sunrise",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-birquq-32",
+      "brand": "Tangiers",
+      "name": "Birquq · Sour Grape",
+      "shortName": "Sour Grape",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-birquq-99",
+      "brand": "Tangiers",
+      "name": "Birquq · Static Starlight",
+      "shortName": "Static Starlight",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-birquq-03",
+      "brand": "Tangiers",
+      "name": "Birquq · Strawberry",
+      "shortName": "Strawberry",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-birquq-62",
+      "brand": "Tangiers",
+      "name": "Birquq · Strawberry-Kiwi",
+      "shortName": "Strawberry-Kiwi",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-birquq-56",
+      "brand": "Tangiers",
+      "name": "Birquq · Tasty Peach",
+      "shortName": "Tasty Peach",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-birquq-19",
+      "brand": "Tangiers",
+      "name": "Birquq · Watermelon",
+      "shortName": "Watermelon",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-birquq-02",
+      "brand": "Tangiers",
+      "name": "Birquq · Yellow Apple",
+      "shortName": "Yellow Apple",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-burley-37",
+      "brand": "Tangiers",
+      "name": "Burley · Absinthe",
+      "shortName": "Absinthe",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-burley-82",
+      "brand": "Tangiers",
+      "name": "Burley · Brambleberry",
+      "shortName": "Brambleberry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=8"
+    },
+    {
+      "id": "tangiers-burley-96",
+      "brand": "Tangiers",
+      "name": "Burley · Cane Mint",
+      "shortName": "Cane Mint",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-burley-38",
+      "brand": "Tangiers",
+      "name": "Burley · Kashmir Peach",
+      "shortName": "Kashmir Peach",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-burley-111",
+      "brand": "Tangiers",
+      "name": "Burley · Ololiuqui",
+      "shortName": "Ololiuqui",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-burley-29",
+      "brand": "Tangiers",
+      "name": "Burley · Prince Of Gray",
+      "shortName": "Prince Of Gray",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-burley-99",
+      "brand": "Tangiers",
+      "name": "Burley · Static Starlight",
+      "shortName": "Static Starlight",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-burley-77",
+      "brand": "Tangiers",
+      "name": "Burley · Tropical Revenge!",
+      "shortName": "Tropical Revenge!",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-f-line-37",
+      "brand": "Tangiers",
+      "name": "F-Line · Absinthe",
+      "shortName": "Absinthe",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-f-line-27",
+      "brand": "Tangiers",
+      "name": "F-Line · Cocoa",
+      "shortName": "Cocoa",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-f-line-28",
+      "brand": "Tangiers",
+      "name": "F-Line · Cool Strawberry",
+      "shortName": "Cool Strawberry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-f-line-113",
+      "brand": "Tangiers",
+      "name": "F-Line · Experimint",
+      "shortName": "Experimint",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-f-line-72",
+      "brand": "Tangiers",
+      "name": "F-Line · Kashmir",
+      "shortName": "Kashmir",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-f-line-114",
+      "brand": "Tangiers",
+      "name": "F-Line · Mandarin Orange",
+      "shortName": "Mandarin Orange",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-f-line-10",
+      "brand": "Tangiers",
+      "name": "F-Line · Orange Soda",
+      "shortName": "Orange Soda",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-f-line-69",
+      "brand": "Tangiers",
+      "name": "F-Line · Passionfruit",
+      "shortName": "Passionfruit",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-f-line-71",
+      "brand": "Tangiers",
+      "name": "F-Line · Red Tea",
+      "shortName": "Red Tea",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-f-line-85",
+      "brand": "Tangiers",
+      "name": "F-Line · Spearmint",
+      "shortName": "Spearmint",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=8"
+    },
+    {
+      "id": "tangiers-f-line-03",
+      "brand": "Tangiers",
+      "name": "F-Line · Strawberry",
+      "shortName": "Strawberry",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-f-line-02",
+      "brand": "Tangiers",
+      "name": "F-Line · Yellow Apple",
+      "shortName": "Yellow Apple",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-noir-24",
+      "brand": "Tangiers",
+      "name": "Noir · 2005 Blueberry",
+      "shortName": "2005 Blueberry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-noir-37",
+      "brand": "Tangiers",
+      "name": "Noir · Absinthe",
+      "shortName": "Absinthe",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-noir-55b",
+      "brand": "Tangiers",
+      "name": "Noir · Apricot",
+      "shortName": "Apricot",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=5"
+    },
+    {
+      "id": "tangiers-noir-76",
+      "brand": "Tangiers",
+      "name": "Noir · Apricot Spring Blend",
+      "shortName": "Apricot Spring Blend",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-noir-59",
+      "brand": "Tangiers",
+      "name": "Noir · Blackberry",
+      "shortName": "Blackberry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-noir-30",
+      "brand": "Tangiers",
+      "name": "Noir · Blackthorn",
+      "shortName": "Blackthorn",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-noir-04",
+      "brand": "Tangiers",
+      "name": "Noir · Blitzsturm",
+      "shortName": "Blitzsturm",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-noir-12",
+      "brand": "Tangiers",
+      "name": "Noir · Blue Flower",
+      "shortName": "Blue Flower",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-noir-65",
+      "brand": "Tangiers",
+      "name": "Noir · Blue Gumball 2.0",
+      "shortName": "Blue Gumball 2.0",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-noir-21",
+      "brand": "Tangiers",
+      "name": "Noir · Blueberry",
+      "shortName": "Blueberry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-noir-82",
+      "brand": "Tangiers",
+      "name": "Noir · Brambleberry",
+      "shortName": "Brambleberry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=8"
+    },
+    {
+      "id": "tangiers-noir-33b",
+      "brand": "Tangiers",
+      "name": "Noir · Cactus Fruit",
+      "shortName": "Cactus Fruit",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-noir-96",
+      "brand": "Tangiers",
+      "name": "Noir · Cane Mint",
+      "shortName": "Cane Mint",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-noir-88",
+      "brand": "Tangiers",
+      "name": "Noir · Cherry Limeade",
+      "shortName": "Cherry Limeade",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=8"
+    },
+    {
+      "id": "tangiers-noir-121",
+      "brand": "Tangiers",
+      "name": "Noir · Chocolate Cherry",
+      "shortName": "Chocolate Cherry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=11"
+    },
+    {
+      "id": "tangiers-noir-89",
+      "brand": "Tangiers",
+      "name": "Noir · Chocolate Iced Cream",
+      "shortName": "Chocolate Iced Cream",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=8"
+    },
+    {
+      "id": "tangiers-noir-97",
+      "brand": "Tangiers",
+      "name": "Noir · Chocolate Mint",
+      "shortName": "Chocolate Mint",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-noir-40b",
+      "brand": "Tangiers",
+      "name": "Noir · Cinnamon",
+      "shortName": "Cinnamon",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-noir-79",
+      "brand": "Tangiers",
+      "name": "Noir · Clove",
+      "shortName": "Clove",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-noir-27",
+      "brand": "Tangiers",
+      "name": "Noir · Cocoa",
+      "shortName": "Cocoa",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-noir-08",
+      "brand": "Tangiers",
+      "name": "Noir · Coconut",
+      "shortName": "Coconut",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-noir-28",
+      "brand": "Tangiers",
+      "name": "Noir · Cool Strawberry",
+      "shortName": "Cool Strawberry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-noir-50",
+      "brand": "Tangiers",
+      "name": "Noir · Cucumber Lavender",
+      "shortName": "Cucumber Lavender",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=5"
+    },
+    {
+      "id": "tangiers-noir-117",
+      "brand": "Tangiers",
+      "name": "Noir · Dark Cherry",
+      "shortName": "Dark Cherry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-noir-26",
+      "brand": "Tangiers",
+      "name": "Noir · Double Orange",
+      "shortName": "Double Orange",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-noir-113",
+      "brand": "Tangiers",
+      "name": "Noir · Experimint",
+      "shortName": "Experimint",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-noir-115",
+      "brand": "Tangiers",
+      "name": "Noir · Forbidden Fruit",
+      "shortName": "Forbidden Fruit",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-noir-103",
+      "brand": "Tangiers",
+      "name": "Noir · Foreplay On The Peach",
+      "shortName": "Foreplay On The Peach",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-noir-109",
+      "brand": "Tangiers",
+      "name": "Noir · French Jelly",
+      "shortName": "French Jelly",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-noir-36",
+      "brand": "Tangiers",
+      "name": "Noir · Grape",
+      "shortName": "Grape",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-noir-95",
+      "brand": "Tangiers",
+      "name": "Noir · Grapefruit",
+      "shortName": "Grapefruit",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-noir-15",
+      "brand": "Tangiers",
+      "name": "Noir · Green Apple Stuff",
+      "shortName": "Green Apple Stuff",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-noir-54",
+      "brand": "Tangiers",
+      "name": "Noir · Green Apple Tea",
+      "shortName": "Green Apple Tea",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=5"
+    },
+    {
+      "id": "tangiers-noir-35",
+      "brand": "Tangiers",
+      "name": "Noir · Green Tea",
+      "shortName": "Green Tea",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-noir-68",
+      "brand": "Tangiers",
+      "name": "Noir · Guajava",
+      "shortName": "Guajava",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-noir-66",
+      "brand": "Tangiers",
+      "name": "Noir · Guajava Kiss",
+      "shortName": "Guajava Kiss",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-noir-41",
+      "brand": "Tangiers",
+      "name": "Noir · Guanabana",
+      "shortName": "Guanabana",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-noir-78",
+      "brand": "Tangiers",
+      "name": "Noir · Hotchata",
+      "shortName": "Hotchata",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-noir-61",
+      "brand": "Tangiers",
+      "name": "Noir · Indian Summer",
+      "shortName": "Indian Summer",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-noir-34",
+      "brand": "Tangiers",
+      "name": "Noir · It&#x27;s Like That One Breakfast Cereal",
+      "shortName": "It&#x27;s Like That One Breakfast Cereal",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-noir-43",
+      "brand": "Tangiers",
+      "name": "Noir · Jackfruit",
+      "shortName": "Jackfruit",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-noir-64",
+      "brand": "Tangiers",
+      "name": "Noir · Jamaica",
+      "shortName": "Jamaica",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-noir-20",
+      "brand": "Tangiers",
+      "name": "Noir · Juicy Peach",
+      "shortName": "Juicy Peach",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-noir-72",
+      "brand": "Tangiers",
+      "name": "Noir · Kashmir",
+      "shortName": "Kashmir",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-noir-23",
+      "brand": "Tangiers",
+      "name": "Noir · Kashmir Apple",
+      "shortName": "Kashmir Apple",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-noir-75",
+      "brand": "Tangiers",
+      "name": "Noir · Kashmir Black",
+      "shortName": "Kashmir Black",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-noir-40",
+      "brand": "Tangiers",
+      "name": "Noir · Kashmir Blue",
+      "shortName": "Kashmir Blue",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-noir-11",
+      "brand": "Tangiers",
+      "name": "Noir · Kashmir Cherry",
+      "shortName": "Kashmir Cherry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-noir-70",
+      "brand": "Tangiers",
+      "name": "Noir · Kashmir Guajava",
+      "shortName": "Kashmir Guajava",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-noir-38",
+      "brand": "Tangiers",
+      "name": "Noir · Kashmir Peach",
+      "shortName": "Kashmir Peach",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-noir-87",
+      "brand": "Tangiers",
+      "name": "Noir · Kiwi",
+      "shortName": "Kiwi",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=8"
+    },
+    {
+      "id": "tangiers-noir-119",
+      "brand": "Tangiers",
+      "name": "Noir · Kosmik",
+      "shortName": "Kosmik",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-noir-91",
+      "brand": "Tangiers",
+      "name": "Noir · Lemon",
+      "shortName": "Lemon",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=8"
+    },
+    {
+      "id": "tangiers-noir-05",
+      "brand": "Tangiers",
+      "name": "Noir · Lemon Blossom",
+      "shortName": "Lemon Blossom",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-noir-46",
+      "brand": "Tangiers",
+      "name": "Noir · Lemon Tea",
+      "shortName": "Lemon Tea",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=5"
+    },
+    {
+      "id": "tangiers-noir-74",
+      "brand": "Tangiers",
+      "name": "Noir · Lemon-Lime",
+      "shortName": "Lemon-Lime",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-noir-01",
+      "brand": "Tangiers",
+      "name": "Noir · Lemongrass",
+      "shortName": "Lemongrass",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-noir-39",
+      "brand": "Tangiers",
+      "name": "Noir · Lime",
+      "shortName": "Lime",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-noir-25",
+      "brand": "Tangiers",
+      "name": "Noir · Liquorice",
+      "shortName": "Liquorice",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-noir-102",
+      "brand": "Tangiers",
+      "name": "Noir · Little Purple Stuff",
+      "shortName": "Little Purple Stuff",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-noir-114",
+      "brand": "Tangiers",
+      "name": "Noir · Mandarin Orange",
+      "shortName": "Mandarin Orange",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-noir-07",
+      "brand": "Tangiers",
+      "name": "Noir · Mango",
+      "shortName": "Mango",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-noir-94",
+      "brand": "Tangiers",
+      "name": "Noir · Maraschino Cherry",
+      "shortName": "Maraschino Cherry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-noir-44",
+      "brand": "Tangiers",
+      "name": "Noir · Marigold",
+      "shortName": "Marigold",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "tangiers-noir-09",
+      "brand": "Tangiers",
+      "name": "Noir · Melon Blend",
+      "shortName": "Melon Blend",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-noir-67",
+      "brand": "Tangiers",
+      "name": "Noir · Mexican Mocha",
+      "shortName": "Mexican Mocha",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-noir-55",
+      "brand": "Tangiers",
+      "name": "Noir · Mime",
+      "shortName": "Mime",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=5"
+    },
+    {
+      "id": "tangiers-noir-92",
+      "brand": "Tangiers",
+      "name": "Noir · Mimon",
+      "shortName": "Mimon",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-noir-04b",
+      "brand": "Tangiers",
+      "name": "Noir · Mixed Fruit",
+      "shortName": "Mixed Fruit",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-noir-49",
+      "brand": "Tangiers",
+      "name": "Noir · Mixed Fruit #6",
+      "shortName": "Mixed Fruit #6",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=5"
+    },
+    {
+      "id": "tangiers-noir-89b",
+      "brand": "Tangiers",
+      "name": "Noir · Nectarine",
+      "shortName": "Nectarine",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=8"
+    },
+    {
+      "id": "tangiers-noir-73",
+      "brand": "Tangiers",
+      "name": "Noir · Old School Watermelon",
+      "shortName": "Old School Watermelon",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-noir-10",
+      "brand": "Tangiers",
+      "name": "Noir · Orange Soda",
+      "shortName": "Orange Soda",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-noir-118",
+      "brand": "Tangiers",
+      "name": "Noir · Papaya Sorbet",
+      "shortName": "Papaya Sorbet",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=10"
+    },
+    {
+      "id": "tangiers-noir-69",
+      "brand": "Tangiers",
+      "name": "Noir · Passionfruit",
+      "shortName": "Passionfruit",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-noir-90",
+      "brand": "Tangiers",
+      "name": "Noir · Peach Iced Tea",
+      "shortName": "Peach Iced Tea",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=8"
+    },
+    {
+      "id": "tangiers-noir-51",
+      "brand": "Tangiers",
+      "name": "Noir · Pear",
+      "shortName": "Pear",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=5"
+    },
+    {
+      "id": "tangiers-noir-47",
+      "brand": "Tangiers",
+      "name": "Noir · Pear Watermelon",
+      "shortName": "Pear Watermelon",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=5"
+    },
+    {
+      "id": "tangiers-noir-06",
+      "brand": "Tangiers",
+      "name": "Noir · Pineapple",
+      "shortName": "Pineapple",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-noir-16",
+      "brand": "Tangiers",
+      "name": "Noir · Pink Grapefruit",
+      "shortName": "Pink Grapefruit",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-noir-63",
+      "brand": "Tangiers",
+      "name": "Noir · Pumpkin",
+      "shortName": "Pumpkin",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-noir-53",
+      "brand": "Tangiers",
+      "name": "Noir · Raspberry",
+      "shortName": "Raspberry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=5"
+    },
+    {
+      "id": "tangiers-noir-17",
+      "brand": "Tangiers",
+      "name": "Noir · Raspberry Iced Tea",
+      "shortName": "Raspberry Iced Tea",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-noir-71",
+      "brand": "Tangiers",
+      "name": "Noir · Red Tea",
+      "shortName": "Red Tea",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-noir-120",
+      "brand": "Tangiers",
+      "name": "Noir · Refreshing Melon Berry",
+      "shortName": "Refreshing Melon Berry",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=11"
+    },
+    {
+      "id": "tangiers-noir-18",
+      "brand": "Tangiers",
+      "name": "Noir · Regal Flower",
+      "shortName": "Regal Flower",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-noir-57",
+      "brand": "Tangiers",
+      "name": "Noir · Sevilla Orange",
+      "shortName": "Sevilla Orange",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-noir-31",
+      "brand": "Tangiers",
+      "name": "Noir · Sour Watermelon",
+      "shortName": "Sour Watermelon",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=3"
+    },
+    {
+      "id": "tangiers-noir-85",
+      "brand": "Tangiers",
+      "name": "Noir · Spearmint",
+      "shortName": "Spearmint",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=8"
+    },
+    {
+      "id": "tangiers-noir-99",
+      "brand": "Tangiers",
+      "name": "Noir · Static Starlight",
+      "shortName": "Static Starlight",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=9"
+    },
+    {
+      "id": "tangiers-noir-60",
+      "brand": "Tangiers",
+      "name": "Noir · Steve&#x27;s Mix",
+      "shortName": "Steve&#x27;s Mix",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-noir-03",
+      "brand": "Tangiers",
+      "name": "Noir · Strawberry",
+      "shortName": "Strawberry",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-noir-62",
+      "brand": "Tangiers",
+      "name": "Noir · Strawberry-Kiwi",
+      "shortName": "Strawberry-Kiwi",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-noir-22",
+      "brand": "Tangiers",
+      "name": "Noir · Summer Resort",
+      "shortName": "Summer Resort",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-noir-80",
+      "brand": "Tangiers",
+      "name": "Noir · Summer Solstice Celebration",
+      "shortName": "Summer Solstice Celebration",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=8"
+    },
+    {
+      "id": "tangiers-noir-56",
+      "brand": "Tangiers",
+      "name": "Noir · Tasty Peach",
+      "shortName": "Tasty Peach",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-noir-48",
+      "brand": "Tangiers",
+      "name": "Noir · Tropical Punch",
+      "shortName": "Tropical Punch",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=5"
+    },
+    {
+      "id": "tangiers-noir-77",
+      "brand": "Tangiers",
+      "name": "Noir · Tropical Revenge!",
+      "shortName": "Tropical Revenge!",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=7"
+    },
+    {
+      "id": "tangiers-noir-86",
+      "brand": "Tangiers",
+      "name": "Noir · Tuscan Cantaloupe",
+      "shortName": "Tuscan Cantaloupe",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=8"
+    },
+    {
+      "id": "tangiers-noir-49b",
+      "brand": "Tangiers",
+      "name": "Noir · Vanilla",
+      "shortName": "Vanilla",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=5"
+    },
+    {
+      "id": "tangiers-noir-19",
+      "brand": "Tangiers",
+      "name": "Noir · Watermelon",
+      "shortName": "Watermelon",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-noir-58",
+      "brand": "Tangiers",
+      "name": "Noir · Welsh Cream",
+      "shortName": "Welsh Cream",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=6"
+    },
+    {
+      "id": "tangiers-noir-13",
+      "brand": "Tangiers",
+      "name": "Noir · White Grape",
+      "shortName": "White Grape",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-noir-14",
+      "brand": "Tangiers",
+      "name": "Noir · Wintergreen",
+      "shortName": "Wintergreen",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=2"
+    },
+    {
+      "id": "tangiers-noir-02",
+      "brand": "Tangiers",
+      "name": "Noir · Yellow Apple",
+      "shortName": "Yellow Apple",
+      "url": "https://www.tangiers.us/flavors"
+    },
+    {
+      "id": "tangiers-noir-45",
+      "brand": "Tangiers",
+      "name": "Noir · Yunnan Shaddok",
+      "shortName": "Yunnan Shaddok",
+      "url": "https://www.tangiers.us/flavors?comp-kyy6fcwa_page=4"
+    },
+    {
+      "id": "trofimoff-bailey-s",
+      "brand": "Trofimoff's",
+      "name": "Bailey’s",
+      "shortName": "Bailey’s",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-becherovka",
+      "brand": "Trofimoff's",
+      "name": "Becherovka",
+      "shortName": "Becherovka",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-bellini",
+      "brand": "Trofimoff's",
+      "name": "Bellini",
+      "shortName": "Bellini",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-calvados",
+      "brand": "Trofimoff's",
+      "name": "Calvados",
+      "shortName": "Calvados",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-cashmere-guava",
+      "brand": "Trofimoff's",
+      "name": "Cashmere Guava",
+      "shortName": "Cashmere Guava",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-cashmere-nectarine",
+      "brand": "Trofimoff's",
+      "name": "Cashmere Nectarine",
+      "shortName": "Cashmere Nectarine",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-cavendish",
+      "brand": "Trofimoff's",
+      "name": "Cavendish",
+      "shortName": "Cavendish",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-cocos",
+      "brand": "Trofimoff's",
+      "name": "Cocos",
+      "shortName": "Cocos",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-cognac",
+      "brand": "Trofimoff's",
+      "name": "Cognac",
+      "shortName": "Cognac",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-coke",
+      "brand": "Trofimoff's",
+      "name": "Coke",
+      "shortName": "Coke",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-connecticut",
+      "brand": "Trofimoff's",
+      "name": "Connecticut",
+      "shortName": "Connecticut",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-crespino",
+      "brand": "Trofimoff's",
+      "name": "Crespino",
+      "shortName": "Crespino",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-crio",
+      "brand": "Trofimoff's",
+      "name": "Crio",
+      "shortName": "Crio",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-crud",
+      "brand": "Trofimoff's",
+      "name": "Crud",
+      "shortName": "Crud",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-double-apple",
+      "brand": "Trofimoff's",
+      "name": "Double Apple",
+      "shortName": "Double Apple",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-drama",
+      "brand": "Trofimoff's",
+      "name": "Drama",
+      "shortName": "Drama",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-elder-flowers",
+      "brand": "Trofimoff's",
+      "name": "Elder Flowers",
+      "shortName": "Elder Flowers",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-finlandia-vanila",
+      "brand": "Trofimoff's",
+      "name": "Finlandia Vanila",
+      "shortName": "Finlandia Vanila",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-futura",
+      "brand": "Trofimoff's",
+      "name": "Futura",
+      "shortName": "Futura",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-green-apple",
+      "brand": "Trofimoff's",
+      "name": "Green Apple",
+      "shortName": "Green Apple",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-green-tea",
+      "brand": "Trofimoff's",
+      "name": "Green Tea",
+      "shortName": "Green Tea",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-hazel-hut",
+      "brand": "Trofimoff's",
+      "name": "Hazel Hut",
+      "shortName": "Hazel Hut",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-hurtleberry",
+      "brand": "Trofimoff's",
+      "name": "Hurtleberry",
+      "shortName": "Hurtleberry",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-italia",
+      "brand": "Trofimoff's",
+      "name": "Italia",
+      "shortName": "Italia",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-jenever",
+      "brand": "Trofimoff's",
+      "name": "Jenever",
+      "shortName": "Jenever",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-karelia",
+      "brand": "Trofimoff's",
+      "name": "Karelia",
+      "shortName": "Karelia",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-kiwi",
+      "brand": "Trofimoff's",
+      "name": "Kiwi",
+      "shortName": "Kiwi",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-lavander",
+      "brand": "Trofimoff's",
+      "name": "Lavander",
+      "shortName": "Lavander",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-like-zaghoul",
+      "brand": "Trofimoff's",
+      "name": "Like-Zaghoul",
+      "shortName": "Like-Zaghoul",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-limoncello",
+      "brand": "Trofimoff's",
+      "name": "Limoncello",
+      "shortName": "Limoncello",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-matricaria",
+      "brand": "Trofimoff's",
+      "name": "Matricaria",
+      "shortName": "Matricaria",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-mint",
+      "brand": "Trofimoff's",
+      "name": "Mint",
+      "shortName": "Mint",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-minttu",
+      "brand": "Trofimoff's",
+      "name": "Minttu",
+      "shortName": "Minttu",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-nurr",
+      "brand": "Trofimoff's",
+      "name": "Nurr",
+      "shortName": "Nurr",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-old-school-orange",
+      "brand": "Trofimoff's",
+      "name": "Old School Orange",
+      "shortName": "Old School Orange",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-opuntia-pear",
+      "brand": "Trofimoff's",
+      "name": "Opuntia Pear",
+      "shortName": "Opuntia Pear",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-ortica",
+      "brand": "Trofimoff's",
+      "name": "Ortica",
+      "shortName": "Ortica",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-passion-fruit",
+      "brand": "Trofimoff's",
+      "name": "Passion Fruit",
+      "shortName": "Passion Fruit",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-pear-date",
+      "brand": "Trofimoff's",
+      "name": "Pear Date",
+      "shortName": "Pear Date",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-peche",
+      "brand": "Trofimoff's",
+      "name": "Peche",
+      "shortName": "Peche",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-pepe",
+      "brand": "Trofimoff's",
+      "name": "Pepe",
+      "shortName": "Pepe",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-pineapple",
+      "brand": "Trofimoff's",
+      "name": "Pineapple",
+      "shortName": "Pineapple",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-progrev",
+      "brand": "Trofimoff's",
+      "name": "PROGREV",
+      "shortName": "PROGREV",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-regan",
+      "brand": "Trofimoff's",
+      "name": "Regan",
+      "shortName": "Regan",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-salvia",
+      "brand": "Trofimoff's",
+      "name": "Salvia",
+      "shortName": "Salvia",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-shurale",
+      "brand": "Trofimoff's",
+      "name": "Shurale",
+      "shortName": "Shurale",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-spirit",
+      "brand": "Trofimoff's",
+      "name": "Spirit",
+      "shortName": "Spirit",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-sri-lanka",
+      "brand": "Trofimoff's",
+      "name": "Sri Lanka",
+      "shortName": "Sri Lanka",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-stout",
+      "brand": "Trofimoff's",
+      "name": "Stout",
+      "shortName": "Stout",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-tangerine",
+      "brand": "Trofimoff's",
+      "name": "Tangerine",
+      "shortName": "Tangerine",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-tequila",
+      "brand": "Trofimoff's",
+      "name": "Tequila",
+      "shortName": "Tequila",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-verry-berry",
+      "brand": "Trofimoff's",
+      "name": "Verry Berry",
+      "shortName": "Verry Berry",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-virgin",
+      "brand": "Trofimoff's",
+      "name": "Virgin",
+      "shortName": "Virgin",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-weed",
+      "brand": "Trofimoff's",
+      "name": "Weed",
+      "shortName": "Weed",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-wintergreen",
+      "brand": "Trofimoff's",
+      "name": "Wintergreen",
+      "shortName": "Wintergreen",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    },
+    {
+      "id": "trofimoff-yellow-lemon",
+      "brand": "Trofimoff's",
+      "name": "Yellow Lemon",
+      "shortName": "Yellow Lemon",
+      "url": "https://drive.google.com/file/d/1MkkZRr8Qak0-28k6LvUsVcSClG6fBJZB/view"
+    }
+  ]
+}
