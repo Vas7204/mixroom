@@ -8,6 +8,7 @@
 - Случайный подбор внутри направления без повтора предыдущего.
 - Избранные миксы с сохранением на устройстве.
 - «Микс недели» с автором и ссылкой на первичную публикацию.
+- Автоматическая проверка GitHub Releases и кнопка скачивания новой версии.
 - Крупная карточка с процентами для мастера.
 - Отправка текста через системное меню телефона.
 - Офлайн-каталог 530 позиций восьми марок: поиск по названию и вкусовой ноте, фильтры по марке и TNG, переход к поиску из рецепта.
@@ -32,7 +33,7 @@
 
 `npx tsc --noEmit`
 
-`node --experimental-strip-types --test recipes.test.mjs catalog.test.mjs tng-catalog.test.mjs`
+`node --experimental-strip-types --test recipes.test.mjs catalog.test.mjs tng-catalog.test.mjs updates.test.mjs`
 
 `npx expo export --platform android --platform ios --output-dir build`
 

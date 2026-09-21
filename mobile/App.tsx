@@ -6,6 +6,7 @@ import { CatalogScreen } from './CatalogScreen';
 import { catalog } from './catalog';
 import { chooseRecipe, Profile, profiles, Recipe, recipes, recipeText } from './recipes';
 import { s } from './styles';
+import { APP_VERSION, AppUpdate, fetchAvailableUpdate } from './updates';
 
 const favoritesKey = 'mixroom:favorites:v1';
 
@@ -18,6 +19,8 @@ export default function App() {
   const [favoriteIds, setFavoriteIds] = useState<number[]>([]);
   const [favoritesReady, setFavoritesReady] = useState(false);
   const [showFavorites, setShowFavorites] = useState(false);
+  const [updateStatus, setUpdateStatus] = useState<'checking' | 'current' | 'available' | 'error'>('checking');
+  const [availableUpdate, setAvailableUpdate] = useState<AppUpdate | null>(null);
 
   useEffect(() => {
     let active = true;
@@ -41,6 +44,8 @@ export default function App() {
     });
   }, [favoriteIds, favoritesReady]);
 
+  useEffect(() => { void refreshUpdate(false); }, []);
+
   function openCatalog(query = '') {
     setOpened(false);
     setCatalogQuery(query);
@@ -54,6 +59,26 @@ export default function App() {
 
   function toggleFavorite(id: number) {
     setFavoriteIds(current => current.includes(id) ? current.filter(item => item !== id) : [...current, id]);
+  }
+
+  async function refreshUpdate(showResult: boolean) {
+    setUpdateStatus('checking');
+    try {
+      const update = await fetchAvailableUpdate();
+      setAvailableUpdate(update);
+      setUpdateStatus(update ? 'available' : 'current');
+      if (showResult && !update) Alert.alert('Обновлений нет', `Установлена актуальная версия ${APP_VERSION}.`);
+    } catch {
+      setUpdateStatus('error');
+      if (showResult) Alert.alert('Не удалось проверить обновление', 'Проверьте подключение к интернету и попробуйте ещё раз.');
+    }
+  }
+
+  function downloadUpdate() {
+    if (!availableUpdate) return;
+    Linking.openURL(availableUpdate.downloadUrl).catch(() => {
+      Alert.alert('Не удалось открыть загрузку', 'Откройте страницу релиза на GitHub и скачайте APK вручную.');
+    });
   }
 
   async function share() {
@@ -84,6 +109,11 @@ export default function App() {
       <Pressable accessibilityRole="button" onPress={() => openCatalog()} style={s.catalogLink}>
         <Text style={s.catalogLinkText}>Палитра марок</Text><Text style={s.catalogLinkMeta}>{catalog.length} вкусов ↗</Text>
       </Pressable>
+
+      {availableUpdate && <View style={s.updateBanner}>
+        <View style={s.updateCopy}><Text style={s.updateEyebrow}>ДОСТУПНО ОБНОВЛЕНИЕ</Text><Text style={s.updateTitle}>Mixroom {availableUpdate.version}</Text><Text style={s.updateText}>Скачай новый APK и установи его поверх текущей версии.</Text></View>
+        <Pressable accessibilityRole="link" onPress={downloadUpdate} style={s.updateDownload}><Text style={s.updateDownloadText}>Скачать ↓</Text></Pressable>
+      </View>}
 
       <Text style={s.eyebrow}>ТВОЙ СЛЕДУЮЩИЙ МИКС</Text>
       <Text style={s.title}>Что сегодня{'\n'}по вкусу?</Text>
@@ -127,6 +157,10 @@ export default function App() {
         </Pressable>
         <Pressable accessibilityRole="button" accessibilityLabel={(favoriteIds.includes(recipe.id) ? 'Удалить из избранного: ' : 'Добавить в избранное: ') + recipe.name} onPress={() => toggleFavorite(recipe.id)} style={s.listFavorite}><Text style={s.listFavoriteText}>{favoriteIds.includes(recipe.id) ? '★' : '☆'}</Text></Pressable>
       </View>)}
+      <View style={s.versionCard}>
+        <View style={s.versionCopy}><Text style={s.versionTitle}>Mixroom {APP_VERSION}</Text><Text style={s.versionText}>{updateStatus === 'checking' ? 'Проверяем обновления…' : updateStatus === 'available' ? `Доступна версия ${availableUpdate?.version}` : updateStatus === 'error' ? 'Автопроверка недоступна' : 'Установлена актуальная версия'}</Text></View>
+        <Pressable accessibilityRole="button" disabled={updateStatus === 'checking'} onPress={() => availableUpdate ? downloadUpdate() : refreshUpdate(true)} style={s.versionButton}><Text style={s.versionButtonText}>{availableUpdate ? 'Обновить' : 'Проверить'}</Text></Pressable>
+      </View>
       <Text style={s.footer}>Вкусовые идеи, а не проверенные рецептуры. Бренды, крепость и пропорции уточняй у мастера.</Text>
     </ScrollView>}
 
