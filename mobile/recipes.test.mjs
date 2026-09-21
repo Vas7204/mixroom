@@ -21,3 +21,15 @@ test('Every profile can randomize without repeating the previous recipe', () => 
     }
   }
 });
+test('Every taste profile offers enough variety', () => {
+  for (const profile of profiles.filter(profile => profile !== 'Все')) {
+    assert.ok(recipes.filter(recipe => recipe.profile === profile).length >= 5);
+  }
+});
+test('Attributed recipes use public sources with complete metadata', () => {
+  for (const recipe of recipes.filter(recipe => recipe.source)) {
+    assert.match(recipe.source.url, /^https:\/\//);
+    assert.ok(recipe.source.author.length > 2);
+    assert.match(recipe.source.checkedAt, /^\d{2}\.\d{2}\.\d{4}$/);
+  }
+});
