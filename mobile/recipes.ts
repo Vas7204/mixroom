@@ -1,6 +1,6 @@
 export type Profile = 'Все' | 'Фруктовый' | 'Ягодный' | 'Цитрусовый' | 'Десертный' | 'Свежий';
 export type RecipeSource = { author: string; title: string; url: string; checkedAt: string };
-export type Recipe = { id: number; name: string; profile: Profile; description: string; ingredients: [string, number][]; color: string; note: string; source?: RecipeSource };
+export type Recipe = { id: number | string; name: string; profile: Profile; description: string; ingredients: [string, number][]; color: string; note: string; source?: RecipeSource; generated?: { catalogIds: string[]; tngOnly: boolean } };
 export const profiles: Profile[] = ['Все', 'Фруктовый', 'Ягодный', 'Цитрусовый', 'Десертный', 'Свежий'];
 export const recipes: Recipe[] = [
  {id:1,name:'Тропический вечер',profile:'Фруктовый',description:'Сочное манго, кислинка маракуйи и прохладный финал.',ingredients:[['Манго',50],['Маракуйя',35],['Мята',15]],color:'#DFBD74',note:'Манго — основной вкус. Мята должна оставаться фоном.'},
@@ -28,9 +28,10 @@ export const recipes: Recipe[] = [
  {id:23,name:'Алоэ и киви',profile:'Свежий',description:'Алоэ, зелёный киви и мягкая прохлада.',ingredients:[['Алоэ',40],['Киви',40],['Мята',20]],color:'#90C89B',note:'Лёгкий зелёный профиль с умеренной прохладой.'},
  {id:24,name:'Арбуз и базилик',profile:'Свежий',description:'Сочный арбуз, огурец и ароматный базилик.',ingredients:[['Арбуз',55],['Огурец',25],['Базилик',20]],color:'#87C4A4',note:'Базилик добавить деликатно, сохранив сочность арбуза.'},
  {id:25,name:'Тархун-лимонад',profile:'Свежий',description:'Тархун, лимон и сухая газированная нота.',ingredients:[['Тархун',45],['Лимон',35],['Содовая',20]],color:'#7FC19B',note:'Травяной, бодрый профиль без сильного холода.'},
- {id:26,name:'Вкусно, но без точки',profile:'Фруктовый',description:'Грушевый лимонад с лавандой, ромашковым вареньем и горькой вишней.',ingredients:[['BLACKBURN Pear Lemonade',40],['BONCHE Lavender',20],['САРМА Ромашковое варенье',20],['SAPPHIRE Bitter Cherry',20]],color:'#C8A5CF',note:'Авторская рекомендация команды «Больше, чем кальян». Забить удобным способом; в исходном рецепте указан прогрев на трёх 26-мм углях.',source:{author:'Команда «Больше, чем кальян»',title:'Миксы на вечер от БЧК',url:'https://t.me/mthook/10875',checkedAt:'21.09.2026'}}
+ {id:26,name:'Вкусно, но без точки',profile:'Фруктовый',description:'Грушевый лимонад с лавандой, ромашковым вареньем и горькой вишней.',ingredients:[['BLACKBURN Pear Lemonade',40],['BONCHE Lavender',20],['САРМА Ромашковое варенье',20],['SAPPHIRE Bitter Cherry',20]],color:'#C8A5CF',note:'Авторская рекомендация команды «Больше, чем кальян». Забить удобным способом; в исходном рецепте указан прогрев на трёх 26-мм углях.',source:{author:'Команда «Больше, чем кальян»',title:'Миксы на вечер от БЧК',url:'https://t.me/mthook/10875',checkedAt:'21.09.2026'}},
+ {id:27,name:'Chika / White',profile:'Фруктовый',description:'Гуава на мягкой табачной основе без лишней ароматики.',ingredients:[['SATYR Chika',50],['SATYR White',50]],color:'#C5B88D',note:'Рекомендация бренд-амбассадора SATYR Андрея Обухова. Chika отвечает за вкус гуавы, а White добавляет плотность, мягкость и баланс.',source:{author:'Андрей Обухов · SATYR',title:'Миксология с бренд-амбассадором',url:'https://t.me/satyrclub/791',checkedAt:'26.09.2026'}}
 ];
-export function chooseRecipe(profile: Profile, previousId?: number, random = Math.random): Recipe {
+export function chooseRecipe(profile: Profile, previousId?: Recipe['id'], random = Math.random): Recipe {
  const pool = recipes.filter(r => (profile === 'Все' || r.profile === profile) && r.id !== previousId);
  if (!pool.length) throw new Error('Нет подходящих рецептов');
  return pool[Math.min(pool.length - 1, Math.max(0, Math.floor(random() * pool.length)))];

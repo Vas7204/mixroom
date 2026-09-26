@@ -1,4 +1,4 @@
-export const APP_VERSION = '1.2.0';
+export const APP_VERSION = '1.3.0';
 export const releasesApiUrl = 'https://api.github.com/repos/Vas7204/mixroom/releases?per_page=10';
 
 type GitHubAsset = { name: string; browser_download_url: string };

@@ -18,7 +18,7 @@ const englishNotes: Record<string, string[]> = {
   'персик': ['peach'], 'вишня': ['cherry'], 'апельсин': ['orange'], 'дыня': ['melon'],
   'огурец': ['cucunade'], 'чай': ['tea'], 'чёрный чай': ['tea'], 'бергамот': ['bergamon']
 };
-const normalize = (value: string) => value.toLocaleLowerCase('ru').replaceAll('ё','е').trim();
+const normalize = (value: string) => value.toLocaleLowerCase('ru').replaceAll('ё','е').replace(/[^\p{L}\p{N}]+/gu, ' ').trim();
 
 export function searchCatalog(query: string, brand: Brand = 'Все марки'): CatalogProduct[] {
   const needle = normalize(query);
@@ -27,7 +27,7 @@ export function searchCatalog(query: string, brand: Brand = 'Все марки')
     if (brand === 'TNG' && !product.tng) return false;
     if (brand !== 'Все марки' && brand !== 'TNG' && product.brand !== brand) return false;
     if (!needle) return true;
-    const haystack = normalize(product.name);
+    const haystack = normalize(`${product.brand} ${product.name} ${product.shortName}`);
     return haystack.includes(needle) || synonyms.some(word => haystack.includes(word));
   });
 }
