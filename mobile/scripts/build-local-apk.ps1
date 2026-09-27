@@ -4,7 +4,9 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $projectRoot = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '..'))
-$appVersion = (Get-Content -LiteralPath (Join-Path $projectRoot 'app.json') -Raw | ConvertFrom-Json).expo.version
+$appConfig = (Get-Content -LiteralPath (Join-Path $projectRoot 'app.json') -Raw | ConvertFrom-Json).expo
+$appVersion = $appConfig.version
+$androidVersionCode = [int]$appConfig.android.versionCode
 if (-not $OutputFile) { $OutputFile = "release/mixroom-alpha-$appVersion.apk" }
 $temporaryRoot = [IO.Path]::GetFullPath([IO.Path]::GetTempPath())
 $buildDirectory = [IO.Path]::GetFullPath((Join-Path $temporaryRoot ("mixroom-build-" + [Guid]::NewGuid().ToString('N').Substring(0, 8))))
@@ -14,7 +16,7 @@ if (-not $buildDirectory.StartsWith($temporaryRoot, [StringComparison]::OrdinalI
 }
 
 New-Item -ItemType Directory -Path $buildDirectory | Out-Null
-& robocopy.exe $projectRoot $buildDirectory /E /XD .gradle-cache .android-home .expo /NFL /NDL /NJH /NJS /NP
+& robocopy.exe $projectRoot $buildDirectory /E /XD .gradle-cache .android-home .expo .npm-cache /NFL /NDL /NJH /NJS /NP
 $copyExitCode = $LASTEXITCODE
 if ($copyExitCode -gt 7) {
   throw "Project copy failed with robocopy exit code $copyExitCode"
@@ -30,6 +32,21 @@ if (-not (Test-Path -LiteralPath (Join-Path $javaHome 'bin/java.exe'))) {
 }
 $env:JAVA_HOME = $javaHome
 $env:Path = (Join-Path $javaHome 'bin') + [IO.Path]::PathSeparator + $env:Path
+$env:NODE_ENV = 'production'
+
+$nativeBuildGradle = Join-Path $buildDirectory 'android/app/build.gradle'
+$nativeBuildConfig = Get-Content -LiteralPath $nativeBuildGradle -Raw
+$nativeBuildConfig = [regex]::Replace(
+  $nativeBuildConfig,
+  '(?m)^\s*versionCode\s+\d+\s*$',
+  "        versionCode $androidVersionCode"
+)
+$nativeBuildConfig = [regex]::Replace(
+  $nativeBuildConfig,
+  '(?m)^\s*versionName\s+"[^"]+"\s*$',
+  "        versionName `"$appVersion`""
+)
+Set-Content -LiteralPath $nativeBuildGradle -Value $nativeBuildConfig -Encoding utf8
 
 $localProperties = 'sdk.dir=' + $androidSdk.Replace('\', '/')
 Set-Content -LiteralPath (Join-Path $buildDirectory 'android/local.properties') -Value $localProperties -Encoding ascii
@@ -39,10 +56,21 @@ Add-Content -LiteralPath $gradleProperties -Value "`nandroid.overridePathCheck=t
 $gradle = Join-Path $buildDirectory 'android/gradlew.bat'
 Push-Location (Join-Path $buildDirectory 'android')
 try {
+  & $gradle clean --no-daemon
+  if ($LASTEXITCODE -ne 0) { throw "Gradle clean failed with exit code $LASTEXITCODE" }
   & $gradle assembleRelease --no-daemon
   if ($LASTEXITCODE -ne 0) { throw "Gradle failed with exit code $LASTEXITCODE" }
 } finally {
   Pop-Location
+}
+
+$expoModulesList = Join-Path $buildDirectory 'node_modules/expo/android/build/generated/expo/src/main/java/expo/modules/ExpoModulesPackageList.kt'
+if (-not (Test-Path -LiteralPath $expoModulesList)) {
+  throw 'Expo modules package list was not generated'
+}
+$expoModules = Get-Content -LiteralPath $expoModulesList -Raw
+if ($expoModules -notmatch 'expo\.modules\.asset\.AssetModule') {
+  throw 'ExpoAsset was not registered in the native Android build'
 }
 
 $apk = Join-Path $buildDirectory 'android/app/build/outputs/apk/release/app-release.apk'

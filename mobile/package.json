@@ -1,10 +1,11 @@
 {
   "name": "mobile",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "main": "index.ts",
   "dependencies": {
     "@react-native-async-storage/async-storage": "2.2.0",
-    "expo": "~57.0.22",
+    "expo": "~57.0.25",
+    "expo-asset": "~57.0.17",
     "expo-status-bar": "~57.0.1",
     "react": "19.2.3",
     "react-native": "0.86.3"
