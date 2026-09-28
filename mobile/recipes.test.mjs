@@ -27,9 +27,12 @@ test('Every taste profile offers enough variety', () => {
   }
 });
 test('Attributed recipes use public sources with complete metadata', () => {
-  for (const recipe of recipes.filter(recipe => recipe.source)) {
+  const attributed = recipes.filter(recipe => recipe.source);
+  assert.equal(new Set(attributed.map(recipe => recipe.source.url)).size, attributed.length);
+  for (const recipe of attributed) {
     assert.match(recipe.source.url, /^https:\/\//);
     assert.ok(recipe.source.author.length > 2);
+    assert.ok(recipe.source.title.length > 2);
     assert.match(recipe.source.checkedAt, /^\d{2}\.\d{2}\.\d{4}$/);
   }
 });

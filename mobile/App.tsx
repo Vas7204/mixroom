@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { StatusBar } from 'expo-status-bar';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Alert, Linking, Modal, Pressable, SafeAreaView, ScrollView, Share, Text, View } from 'react-native';
 import { CatalogScreen } from './CatalogScreen';
 import { catalog } from './catalog';
@@ -12,6 +12,18 @@ import { APP_VERSION, AppUpdate, fetchAvailableUpdate } from './updates';
 const favoritesKey = 'mixroom:favorites:v1';
 const generatedFavoritesKey = 'mixroom:generated-favorites:v1';
 
+type Screen = 'mix' | 'saved' | 'catalog';
+type CollectionMode = 'saved' | 'authors';
+
+const profileInfo: Record<Profile, { label: string; icon: string; caption: string; color: string }> = {
+  'Все': { label: 'Сюрприз', icon: '✦', caption: 'Доверься алгоритму', color: '#FF775C' },
+  'Фруктовый': { label: 'Фрукты', icon: '◒', caption: 'Сочно и мягко', color: '#FF9B68' },
+  'Ягодный': { label: 'Ягоды', icon: '●', caption: 'Глубоко и ярко', color: '#E76F9E' },
+  'Цитрусовый': { label: 'Цитрусы', icon: '◐', caption: 'Кисло и звонко', color: '#FFD166' },
+  'Десертный': { label: 'Десерт', icon: '◆', caption: 'Сладко и плотно', color: '#C7A6FF' },
+  'Свежий': { label: 'Свежесть', icon: '≈', caption: 'Чисто и прохладно', color: '#6ED6C1' },
+};
+
 function isGeneratedRecipe(value: unknown): value is Recipe {
   if (!value || typeof value !== 'object') return false;
   const recipe = value as Partial<Recipe>;
@@ -20,20 +32,67 @@ function isGeneratedRecipe(value: unknown): value is Recipe {
     Boolean(recipe.generated?.catalogIds?.length);
 }
 
+function MixroomLogo() {
+  return <View style={s.logoLockup}>
+    <View style={s.logoTile}><View style={s.logoCutout} /><View style={s.logoDot} /></View>
+    <View><Text style={s.logo}>MIXROOM</Text><Text style={s.logoCaption}>FLAVOUR LAB</Text></View>
+  </View>;
+}
+
+function RecipeListCard({ recipe, favorite, onOpen, onFavorite }: {
+  recipe: Recipe;
+  favorite: boolean;
+  onOpen: () => void;
+  onFavorite: () => void;
+}) {
+  return <View style={s.recipeListCard}>
+    <Pressable accessibilityRole="button" accessibilityLabel={`Открыть рецепт ${recipe.name}`} onPress={onOpen} style={s.recipeListMain}>
+      <View style={[s.recipeListArt, { backgroundColor: `${recipe.color}22` }]}>
+        <View style={[s.recipeListOrb, { backgroundColor: recipe.color }]} />
+        <Text style={[s.recipeListArtText, { color: recipe.color }]}>{recipe.generated ? 'AI' : String(recipe.id).padStart(2, '0')}</Text>
+      </View>
+      <View style={s.recipeListCopy}>
+        <Text style={s.recipeListProfile}>{recipe.profile.toUpperCase()}</Text>
+        <Text style={s.recipeListTitle} numberOfLines={2}>{recipe.name}</Text>
+        <Text style={s.recipeListNotes} numberOfLines={1}>{recipe.ingredients.map(item => item[0]).join('  ·  ')}</Text>
+      </View>
+      <Text style={s.recipeListArrow}>›</Text>
+    </Pressable>
+    <Pressable accessibilityRole="button" accessibilityLabel={favorite ? 'Удалить из сохранённых' : 'Сохранить рецепт'} onPress={onFavorite} style={s.recipeListFavorite}>
+      <Text style={[s.recipeListFavoriteText, favorite && s.recipeListFavoriteTextActive]}>{favorite ? '♥' : '♡'}</Text>
+    </Pressable>
+  </View>;
+}
+
+function BottomNavigation({ screen, savedCount, onSelect }: { screen: Screen; savedCount: number; onSelect: (screen: Screen) => void }) {
+  const items: { id: Screen; icon: string; label: string }[] = [
+    { id: 'mix', icon: '✦', label: 'Микс' },
+    { id: 'saved', icon: savedCount ? '♥' : '♡', label: 'Коллекция' },
+    { id: 'catalog', icon: '▦', label: 'Палитра' },
+  ];
+  return <View style={s.navWrap}><View style={s.nav}>
+    {items.map(item => <Pressable key={item.id} accessibilityRole="tab" accessibilityState={{ selected: screen === item.id }} onPress={() => onSelect(item.id)} style={[s.navItem, screen === item.id && s.navItemActive]}>
+      <View style={s.navIconWrap}><Text style={[s.navIcon, screen === item.id && s.navIconActive]}>{item.icon}</Text>{item.id === 'saved' && savedCount > 0 && <View style={s.navCount}><Text style={s.navCountText}>{savedCount}</Text></View>}</View>
+      <Text style={[s.navLabel, screen === item.id && s.navLabelActive]}>{item.label}</Text>
+    </Pressable>)}
+  </View></View>;
+}
+
 export default function App() {
   const [profile, setProfile] = useState<Profile>('Все');
   const [selected, setSelected] = useState<Recipe>(recipes[0]);
   const [opened, setOpened] = useState(false);
-  const [screen, setScreen] = useState<'mixes' | 'catalog'>('mixes');
+  const [screen, setScreen] = useState<Screen>('mix');
+  const [collectionMode, setCollectionMode] = useState<CollectionMode>('saved');
   const [catalogQuery, setCatalogQuery] = useState('');
   const [favoriteIds, setFavoriteIds] = useState<string[]>([]);
   const [savedGenerated, setSavedGenerated] = useState<Recipe[]>([]);
   const [favoritesReady, setFavoritesReady] = useState(false);
   const [generatorOptions, setGeneratorOptions] = useState<GeneratorOptions>({ components: 3, tngOnly: false });
-  const [showFavorites, setShowFavorites] = useState(false);
-  const [showAuthors, setShowAuthors] = useState(false);
   const [updateStatus, setUpdateStatus] = useState<'checking' | 'current' | 'available' | 'error'>('checking');
   const [availableUpdate, setAvailableUpdate] = useState<AppUpdate | null>(null);
+  const mixScroll = useRef<ScrollView>(null);
+  const resultPosition = useRef(0);
 
   useEffect(() => {
     let active = true;
@@ -57,12 +116,16 @@ export default function App() {
     Promise.all([
       AsyncStorage.setItem(favoritesKey, JSON.stringify(favoriteIds)),
       AsyncStorage.setItem(generatedFavoritesKey, JSON.stringify(savedGenerated)),
-    ]).catch(() => {
-      Alert.alert('Не удалось сохранить', 'Избранное останется до закрытия приложения. Попробуйте ещё раз.');
-    });
+    ]).catch(() => Alert.alert('Не удалось сохранить', 'Коллекция останется до закрытия приложения. Попробуйте ещё раз.'));
   }, [favoriteIds, savedGenerated, favoritesReady]);
 
   useEffect(() => { void refreshUpdate(false); }, []);
+
+  const availableRecipes = useMemo(() => [...recipes, ...savedGenerated.filter(saved => !recipes.some(recipe => recipe.id === saved.id))], [savedGenerated]);
+  const authorRecipes = useMemo(() => recipes.filter(recipe => recipe.source), []);
+  const savedRecipes = useMemo(() => availableRecipes.filter(recipe => favoriteIds.includes(String(recipe.id))), [availableRecipes, favoriteIds]);
+  const recommendations = useMemo(() => availableRecipes.filter(recipe => recipe.id !== selected.id && (profile === 'Все' || recipe.profile === profile)).slice(0, 6), [availableRecipes, profile, selected.id]);
+  const selectedIsFavorite = favoriteIds.includes(String(selected.id));
 
   function openCatalog(query = '') {
     setOpened(false);
@@ -72,7 +135,6 @@ export default function App() {
 
   function selectProfile(value: Profile) {
     setProfile(value);
-    if (value !== 'Все' && selected.profile !== value) setSelected(recipes.find(recipe => recipe.profile === value)!);
   }
 
   function toggleFavorite(recipe: Recipe) {
@@ -83,6 +145,11 @@ export default function App() {
       setSavedGenerated(current => removing ? current.filter(item => String(item.id) !== id) :
         current.some(item => String(item.id) === id) ? current : [...current, recipe]);
     }
+  }
+
+  function createMix() {
+    setSelected(generateRecipe(profile, generatorOptions, selected.id));
+    setTimeout(() => mixScroll.current?.scrollTo({ y: Math.max(0, resultPosition.current - 18), animated: true }), 80);
   }
 
   async function refreshUpdate(showResult: boolean) {
@@ -100,9 +167,7 @@ export default function App() {
 
   function downloadUpdate() {
     if (!availableUpdate) return;
-    Linking.openURL(availableUpdate.downloadUrl).catch(() => {
-      Alert.alert('Не удалось открыть загрузку', 'Откройте страницу релиза на GitHub и скачайте APK вручную.');
-    });
+    Linking.openURL(availableUpdate.downloadUrl).catch(() => Alert.alert('Не удалось открыть загрузку', 'Откройте страницу релиза на GitHub и скачайте APK вручную.'));
   }
 
   async function share() {
@@ -113,104 +178,144 @@ export default function App() {
     }
   }
 
-  const selectedIsFavorite = favoriteIds.includes(String(selected.id));
-  const authorRecipes = recipes.filter(recipe => recipe.source);
-  const availableRecipes = [...recipes, ...savedGenerated.filter(saved => !recipes.some(recipe => recipe.id === saved.id))];
-  const matches = availableRecipes.filter(recipe =>
-    (profile === 'Все' || recipe.profile === profile) &&
-    recipe.id !== selected.id &&
-    (!showFavorites || favoriteIds.includes(String(recipe.id))) &&
-    (!showAuthors || recipe.source)
-  );
-
-  function openAuthors() {
-    const latest = authorRecipes[authorRecipes.length - 1];
-    setProfile('Все');
-    setShowFavorites(false);
-    setShowAuthors(true);
-    if (latest) setSelected(latest);
+  function openRecipe(recipe: Recipe) {
+    setSelected(recipe);
+    setOpened(true);
   }
 
+  const home = <ScrollView ref={mixScroll} showsVerticalScrollIndicator={false} contentContainerStyle={s.page}>
+    <View style={s.topbar}>
+      <MixroomLogo />
+      <Pressable accessibilityRole="button" accessibilityLabel={`Открыть коллекцию, ${favoriteIds.length}`} onPress={() => setScreen('saved')} style={s.topbarButton}>
+        <Text style={s.topbarHeart}>{favoriteIds.length ? '♥' : '♡'}</Text><Text style={s.topbarCount}>{favoriteIds.length}</Text>
+      </Pressable>
+    </View>
+
+    {availableUpdate && <Pressable accessibilityRole="link" onPress={downloadUpdate} style={s.updateStrip}>
+      <View style={s.updatePulse} /><Text style={s.updateStripText}>Доступна версия {availableUpdate.version}</Text><Text style={s.updateStripLink}>Скачать  ↗</Text>
+    </Pressable>}
+
+    <View style={s.heroBlock}>
+      <Text style={s.heroKicker}>ТВОЙ ВКУС · ТВОИ ПРАВИЛА</Text>
+      <Text style={s.heroTitle}>Соберём{`\n`}чашу?</Text>
+      <Text style={s.heroText}>Выбери настроение, а мы найдём сочетание среди {catalog.length} вкусов и рассчитаем пропорции.</Text>
+    </View>
+
+    <View style={s.stepHeader}><Text style={s.stepNumber}>01</Text><View style={s.stepRule} /><Text style={s.stepTitle}>НАСТРОЕНИЕ</Text></View>
+    <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={s.profileRail}>
+      {profiles.map(item => {
+        const info = profileInfo[item];
+        const active = profile === item;
+        return <Pressable key={item} accessibilityRole="button" accessibilityState={{ selected: active }} onPress={() => selectProfile(item)} style={[s.profileCard, active && { backgroundColor: info.color, borderColor: info.color }]}>
+          <Text style={[s.profileIcon, active && s.profileIconActive]}>{info.icon}</Text>
+          <Text style={[s.profileLabel, active && s.profileLabelActive]}>{info.label}</Text>
+          <Text style={[s.profileCaption, active && s.profileCaptionActive]}>{info.caption}</Text>
+        </Pressable>;
+      })}
+    </ScrollView>
+
+    <View style={s.stepHeader}><Text style={s.stepNumber}>02</Text><View style={s.stepRule} /><Text style={s.stepTitle}>ФОРМУЛА</Text></View>
+    <View style={s.labCard}>
+      <View style={s.labDecorOne} /><View style={s.labDecorTwo} />
+      <View style={s.labTop}>
+        <View><Text style={s.labEyebrow}>MIX LAB</Text><Text style={s.labTitle}>Настрой состав</Text></View>
+        <View style={s.labBadge}><Text style={s.labBadgeText}>{generatorOptions.tngOnly ? 'TNG ONLY' : 'FULL CATALOG'}</Text></View>
+      </View>
+      <View style={s.flavourStack}>
+        {Array.from({ length: generatorOptions.components }).map((_, index) => <View key={index} style={[s.flavourLayer, { width: `${100 - index * 16}%`, backgroundColor: index === 0 ? profileInfo[profile].color : index === 1 ? '#B79CFF' : '#FFE7D9' }]}><Text style={[s.flavourLayerText, index === 2 && s.flavourLayerTextDark]}>{index === 0 ? 'ОСНОВА' : index === 1 ? 'ПОДДЕРЖКА' : 'АКЦЕНТ'}</Text></View>)}
+      </View>
+      <View style={s.labControl}>
+        <View><Text style={s.controlLabel}>КОЛИЧЕСТВО НОТ</Text><Text style={s.controlHint}>Чем меньше, тем понятнее вкус</Text></View>
+        <View style={s.segment}>{([2, 3] as const).map(count => <Pressable key={count} accessibilityRole="button" accessibilityState={{ selected: generatorOptions.components === count }} onPress={() => setGeneratorOptions(current => ({ ...current, components: count }))} style={[s.segmentButton, generatorOptions.components === count && s.segmentButtonActive]}><Text style={[s.segmentText, generatorOptions.components === count && s.segmentTextActive]}>{count}</Text></Pressable>)}</View>
+      </View>
+      <Pressable accessibilityRole="switch" accessibilityState={{ checked: generatorOptions.tngOnly }} onPress={() => setGeneratorOptions(current => ({ ...current, tngOnly: !current.tngOnly }))} style={s.switchRow}>
+        <View><Text style={s.controlLabel}>ТОЛЬКО МАРКИ TNG</Text><Text style={s.controlHint}>Tangiers, Bonche, Dogma и другие</Text></View>
+        <View style={[s.switchTrack, generatorOptions.tngOnly && s.switchTrackActive]}><View style={[s.switchThumb, generatorOptions.tngOnly && s.switchThumbActive]} /></View>
+      </Pressable>
+      <Pressable accessibilityRole="button" onPress={createMix} style={({ pressed }) => [s.generateButton, pressed && s.pressed]}>
+        <Text style={s.generateSpark}>✦</Text><Text style={s.generateText}>Собрать новый микс</Text><Text style={s.generateArrow}>→</Text>
+      </Pressable>
+    </View>
+
+    <View onLayout={event => { resultPosition.current = event.nativeEvent.layout.y; }} style={s.resultSection}>
+      <View style={s.stepHeader}><Text style={s.stepNumber}>03</Text><View style={s.stepRule} /><Text style={s.stepTitle}>РЕЗУЛЬТАТ</Text></View>
+      <View style={[s.resultCard, { borderColor: `${selected.color}55` }]} accessibilityLiveRegion="polite">
+        <View style={[s.resultHalo, { backgroundColor: selected.color }]} />
+        <View style={s.resultTop}>
+          <View style={[s.resultProfile, { backgroundColor: `${selected.color}25` }]}><View style={[s.resultDot, { backgroundColor: selected.color }]} /><Text style={[s.resultProfileText, { color: selected.color }]}>{selected.profile}</Text></View>
+          <Pressable accessibilityRole="button" accessibilityLabel={selectedIsFavorite ? 'Удалить из сохранённых' : 'Сохранить рецепт'} onPress={() => toggleFavorite(selected)} style={[s.resultFavorite, selectedIsFavorite && s.resultFavoriteActive]}><Text style={[s.resultFavoriteText, selectedIsFavorite && s.resultFavoriteTextActive]}>{selectedIsFavorite ? '♥' : '♡'}</Text></Pressable>
+        </View>
+        <Text style={s.resultTitle}>{selected.name}</Text>
+        <Text style={s.resultDescription}>{selected.description}</Text>
+        <View style={s.recipeFormula}>
+          {selected.ingredients.map(([name, percent], index) => <View key={name} style={s.formulaRow}>
+            <View style={s.formulaTop}><View style={s.formulaNameWrap}><Text style={s.formulaIndex}>{String(index + 1).padStart(2, '0')}</Text><Text style={s.formulaName}>{name}</Text></View><Text style={s.formulaPercent}>{percent}<Text style={s.formulaPercentMark}>%</Text></Text></View>
+            <View style={s.formulaTrack}><View style={[s.formulaFill, { width: `${percent}%`, backgroundColor: selected.color, opacity: 1 - index * .2 }]} /></View>
+          </View>)}
+        </View>
+        {selected.source && <Pressable accessibilityRole="link" onPress={() => Linking.openURL(selected.source!.url)} style={s.authorChip}><Text style={s.authorChipIcon}>✦</Text><View style={s.authorChipCopy}><Text style={s.authorChipLabel}>РЕЦЕПТ ОТ АВТОРА</Text><Text style={s.authorChipName}>{selected.source.author}</Text></View><Text style={s.authorChipArrow}>↗</Text></Pressable>}
+        <Pressable accessibilityRole="button" onPress={() => setOpened(true)} style={s.masterButton}><Text style={s.masterButtonText}>Открыть рецепт для мастера</Text><Text style={s.masterButtonArrow}>↗</Text></Pressable>
+      </View>
+    </View>
+
+    <View style={s.editorialHeader}><View><Text style={s.editorialKicker}>ЕЩЁ ПОПРОБОВАТЬ</Text><Text style={s.editorialTitle}>В том же настроении</Text></View><Pressable onPress={() => { setCollectionMode('authors'); setScreen('saved'); }}><Text style={s.editorialLink}>Все рецепты</Text></Pressable></View>
+    <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={s.recommendationRail}>
+      {recommendations.map(recipe => <Pressable key={recipe.id} accessibilityRole="button" onPress={() => openRecipe(recipe)} style={s.recommendationCard}>
+        <View style={[s.recommendationVisual, { backgroundColor: `${recipe.color}26` }]}><View style={[s.recommendationDisc, { borderColor: recipe.color }]}><View style={[s.recommendationDiscCore, { backgroundColor: recipe.color }]} /></View><Text style={[s.recommendationNumber, { color: recipe.color }]}>{recipe.generated ? 'AI' : String(recipe.id).padStart(2, '0')}</Text></View>
+        <Text style={s.recommendationProfile}>{recipe.profile.toUpperCase()}</Text><Text style={s.recommendationTitle} numberOfLines={2}>{recipe.name}</Text><Text style={s.recommendationMeta}>{recipe.ingredients.length} ноты  ·  открыть ↗</Text>
+      </Pressable>)}
+    </ScrollView>
+    <Text style={s.legal}>18+ · Mixroom помогает сформулировать вкус. Крепость, забивку и наличие продуктов согласуйте с мастером.</Text>
+  </ScrollView>;
+
+  const collectionItems = collectionMode === 'saved' ? savedRecipes : authorRecipes;
+  const collection = <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={s.page}>
+    <View style={s.topbar}><MixroomLogo /><View style={s.collectionCountBadge}><Text style={s.collectionCountNumber}>{collectionItems.length}</Text></View></View>
+    <Text style={s.screenKicker}>ТВОЯ БИБЛИОТЕКА</Text><Text style={s.screenTitle}>Коллекция</Text><Text style={s.screenSubtitle}>Сохраняй удачные сочетания и возвращайся к рекомендациям авторов.</Text>
+    <View style={s.collectionTabs}>
+      {(['saved', 'authors'] as CollectionMode[]).map(mode => <Pressable key={mode} accessibilityRole="tab" accessibilityState={{ selected: collectionMode === mode }} onPress={() => setCollectionMode(mode)} style={[s.collectionTab, collectionMode === mode && s.collectionTabActive]}><Text style={[s.collectionTabText, collectionMode === mode && s.collectionTabTextActive]}>{mode === 'saved' ? `Сохранено · ${savedRecipes.length}` : `От авторов · ${authorRecipes.length}`}</Text></Pressable>)}
+    </View>
+    {collectionItems.length === 0 ? <View style={s.emptyCollection}>
+      <View style={s.emptyCollectionIcon}><Text style={s.emptyCollectionIconText}>♡</Text></View><Text style={s.emptyCollectionTitle}>Здесь пока пусто</Text><Text style={s.emptyCollectionText}>Нажимай на сердце в карточке микса — рецепт останется на этом устройстве.</Text><Pressable onPress={() => setScreen('mix')} style={s.emptyCollectionButton}><Text style={s.emptyCollectionButtonText}>Собрать первый микс</Text></Pressable>
+    </View> : <View style={s.collectionList}>{collectionItems.map(recipe => <RecipeListCard key={recipe.id} recipe={recipe} favorite={favoriteIds.includes(String(recipe.id))} onOpen={() => openRecipe(recipe)} onFavorite={() => toggleFavorite(recipe)} />)}</View>}
+    <View style={s.systemCard}>
+      <View style={s.systemIcon}><Text style={s.systemIconText}>{updateStatus === 'current' ? '✓' : updateStatus === 'available' ? '↓' : '·'}</Text></View>
+      <View style={s.systemCopy}><Text style={s.systemTitle}>Mixroom {APP_VERSION}</Text><Text style={s.systemText}>{updateStatus === 'checking' ? 'Проверяем обновления…' : updateStatus === 'available' ? `Доступна версия ${availableUpdate?.version}` : updateStatus === 'error' ? 'Не удалось проверить автоматически' : 'Установлена актуальная версия'}</Text></View>
+      <Pressable accessibilityRole="button" disabled={updateStatus === 'checking'} onPress={() => availableUpdate ? downloadUpdate() : refreshUpdate(true)} style={s.systemAction}><Text style={s.systemActionText}>{availableUpdate ? 'Обновить' : 'Проверить'}</Text></Pressable>
+    </View>
+  </ScrollView>;
+
   return <SafeAreaView style={s.safe}>
-    <StatusBar style={opened ? 'dark' : 'light'} />
-    {screen === 'catalog' ? <CatalogScreen initialQuery={catalogQuery} onClose={() => setScreen('mixes')} /> : <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={s.content}>
-      <View style={s.header}>
-        <View style={s.brandLockup}><View style={s.brandMark}><View style={s.brandMarkCore} /></View><Text style={s.logo}>mixroom</Text></View>
-        <Pressable accessibilityRole="button" accessibilityLabel={'Избранное, ' + favoriteIds.length} onPress={() => { setShowAuthors(false); setShowFavorites(value => !value); }} style={[s.savedBadge, showFavorites && s.savedBadgeActive]}>
-          <Text style={[s.savedBadgeText, showFavorites && s.savedBadgeTextActive]}>{showFavorites ? '♥' : '♡'}  {favoriteIds.length}</Text>
-        </Pressable>
-      </View>
-
-      {availableUpdate && <View style={s.updateBanner}>
-        <View style={s.updateCopy}><Text style={s.updateEyebrow}>ДОСТУПНО ОБНОВЛЕНИЕ</Text><Text style={s.updateTitle}>Mixroom {availableUpdate.version}</Text><Text style={s.updateText}>Скачай новый APK и установи его поверх текущей версии.</Text></View>
-        <Pressable accessibilityRole="link" onPress={downloadUpdate} style={s.updateDownload}><Text style={s.updateDownloadText}>Скачать ↓</Text></Pressable>
-      </View>}
-
-      <View style={s.hero}><Text style={s.eyebrow}>ПЕРСОНАЛЬНЫЙ МИКС</Text><Text style={s.title}>Какой вкус{'\n'}тебе хочется?</Text><Text style={s.subtitle}>Выбери настроение. Баланс нот и пропорции мы соберём сами.</Text></View>
-
-      <View style={s.chips}>{profiles.map(item => <Pressable key={item} onPress={() => selectProfile(item)} accessibilityRole="button" accessibilityState={{ selected: profile === item }} style={[s.chip, profile === item && s.activeChip]}><Text style={[s.chipText, profile === item && s.activeText]}>{item}</Text></Pressable>)}</View>
-
-      <View style={s.generatorPanel}>
-        <View style={s.generatorTopline}><Text style={s.generatorTitle}>Настрой состав</Text><Text style={s.generatorMeta}>{catalog.length} вкусов</Text></View>
-        <View style={s.generatorOptions}>
-          <View style={s.generatorChoiceRow}>{([2, 3] as const).map(count => <Pressable key={count} accessibilityRole="button" accessibilityState={{ selected: generatorOptions.components === count }} onPress={() => setGeneratorOptions(current => ({ ...current, components: count }))} style={[s.generatorChoice, generatorOptions.components === count && s.generatorChoiceActive]}><Text style={[s.generatorChoiceText, generatorOptions.components === count && s.generatorChoiceTextActive]}>{count} ноты</Text></Pressable>)}</View>
-          <Pressable accessibilityRole="checkbox" accessibilityState={{ checked: generatorOptions.tngOnly }} onPress={() => setGeneratorOptions(current => ({ ...current, tngOnly: !current.tngOnly }))} style={[s.tngChoice, generatorOptions.tngOnly && s.tngChoiceActive]}><View style={[s.toggleDot, generatorOptions.tngOnly && s.toggleDotActive]} /><Text style={[s.tngChoiceText, generatorOptions.tngOnly && s.tngChoiceTextActive]}>Каталог TNG</Text></Pressable>
-        </View>
-        <Pressable accessibilityRole="button" onPress={() => setSelected(generateRecipe(profile, generatorOptions, selected.id))} style={({ pressed }) => [s.primary, pressed && s.pressed]}><Text style={s.primaryIcon}>✦</Text><Text style={s.primaryText}>Собрать микс</Text><Text style={s.primaryArrow}>→</Text></Pressable>
-      </View>
-
-      <View style={[s.card, { borderColor: `${selected.color}55` }]} accessibilityLiveRegion="polite">
-        <View pointerEvents="none" style={[s.cardGlow, { backgroundColor: selected.color }]} />
-        <View style={s.row}><View style={[s.profileBadge, { backgroundColor: `${selected.color}22` }]}><View style={[s.profileDot, { backgroundColor: selected.color }]} /><Text style={[s.profileBadgeText, { color: selected.color }]}>{selected.profile}</Text></View><Text style={s.meta}>{selected.generated ? 'СОБРАНО ДЛЯ ТЕБЯ' : `РЕЦЕПТ ${String(selected.id).padStart(2, '0')}`}</Text></View>
-        <Text style={s.recipeTitle}>{selected.name}</Text>
-        <Text style={s.description}>{selected.description}</Text>
-        <View style={s.bar}>{selected.ingredients.map(([name, percent], index) => <View key={name} style={{ flex: percent, backgroundColor: selected.color, opacity: 1 - index * .25 }} />)}</View>
-        {selected.ingredients.map(([name, percent], index) => <View key={name} style={s.ingredient}><Text style={s.ingredientIndex}>{String(index + 1).padStart(2, '0')}</Text><Text style={s.ingredientName}>{name}</Text><Text style={s.percent}>{percent}</Text><Text style={s.percentMark}>%</Text></View>)}
-        {selected.source && <Pressable accessibilityRole="link" onPress={() => Linking.openURL(selected.source!.url)} style={s.sourceCard}><View><Text style={s.sourceLabel}>РЕКОМЕНДАЦИЯ АВТОРА</Text><Text style={s.sourceAuthor}>{selected.source.author}</Text></View><Text style={s.sourceLink}>Оригинал ↗</Text></Pressable>}
-        <View style={s.cardActions}>
-          <Pressable accessibilityRole="button" style={[s.favoriteButton, selectedIsFavorite && s.favoriteButtonActive]} onPress={() => toggleFavorite(selected)}><Text style={[s.favoriteButtonText, selectedIsFavorite && s.favoriteButtonTextActive]}>{selectedIsFavorite ? '♥' : '♡'}</Text></Pressable>
-          <Pressable accessibilityRole="button" style={[s.outlineButton, s.cardPrimaryAction]} onPress={() => setOpened(true)}><Text style={s.whiteButtonText}>Карточка для мастера</Text><Text style={s.buttonArrow}>↗</Text></Pressable>
-        </View>
-      </View>
-
-      <Text style={s.hint}>Лучшие сочетания без повтора предыдущего микса</Text>
-
-      <View style={s.discoveryRow}><Pressable accessibilityRole="button" onPress={openAuthors} style={s.discoveryCard}><Text style={s.discoveryIcon}>✦</Text><Text style={s.discoveryTitle}>От авторов</Text><Text style={s.discoveryText}>{authorRecipes.length} проверенных микса</Text><Text style={s.discoveryArrow}>↗</Text></Pressable><Pressable accessibilityRole="button" onPress={() => openCatalog()} style={[s.discoveryCard, s.discoveryCardAlt]}><Text style={s.discoveryNumber}>{catalog.length}</Text><Text style={s.discoveryTitle}>Палитра</Text><Text style={s.discoveryText}>Вкусы и марки</Text><Text style={s.discoveryArrow}>↗</Text></Pressable></View>
-
-      <View style={s.section}>
-        <View><Text style={s.sectionCaption}>{showFavorites ? 'ТВОЯ КОЛЛЕКЦИЯ' : showAuthors ? 'ПЕРВОИСТОЧНИКИ' : 'ВДОХНОВЕНИЕ'}</Text><Text style={s.sectionTitle}>{showFavorites ? 'Избранное' : showAuthors ? 'Миксы от авторов' : 'Ещё попробовать'}</Text></View>
-        <View style={s.sectionToggleRow}>
-          {(showFavorites || showAuthors) && <Pressable accessibilityRole="button" onPress={() => { setShowFavorites(false); setShowAuthors(false); }} style={s.sectionToggle}><Text style={s.sectionToggleText}>Все</Text></Pressable>}
-          {!showFavorites && !showAuthors && <Pressable accessibilityRole="button" onPress={() => setShowFavorites(true)} style={s.sectionToggle}><Text style={s.sectionToggleText}>Избранное</Text></Pressable>}
-        </View>
-      </View>
-
-      {showFavorites && matches.length === 0 ? <View style={s.emptySaved}><Text style={s.emptySavedIcon}>♡</Text><Text style={s.emptySavedTitle}>Пока ничего</Text><Text style={s.emptySavedText}>Сохрани удачный микс сердцем — он останется на этом устройстве.</Text></View> : matches.map(recipe => <View key={recipe.id} style={s.listItem}>
-        <Pressable accessibilityRole="button" accessibilityLabel={'Открыть рецепт ' + recipe.name} onPress={() => { setSelected(recipe); setOpened(true); }} style={s.listMain}>
-          <View style={[s.swatch, { backgroundColor: `${recipe.color}22`, borderColor: `${recipe.color}55` }]}><Text style={[s.swatchText, { color: recipe.color }]}>{recipe.generated ? '✦' : String(recipe.id).padStart(2, '0')}</Text></View>
-          <View style={s.listCopy}><Text style={s.listTitle}>{recipe.name}</Text><Text style={s.listSub}>{recipe.ingredients.map(item => item[0]).join(' · ')}</Text></View>
-          <Text style={s.arrow}>↗</Text>
-        </Pressable>
-        <Pressable accessibilityRole="button" accessibilityLabel={(favoriteIds.includes(String(recipe.id)) ? 'Удалить из избранного: ' : 'Добавить в избранное: ') + recipe.name} onPress={() => toggleFavorite(recipe)} style={s.listFavorite}><Text style={s.listFavoriteText}>{favoriteIds.includes(String(recipe.id)) ? '♥' : '♡'}</Text></Pressable>
-      </View>)}
-      <View style={s.versionCard}>
-        <View style={s.versionCopy}><Text style={s.versionTitle}>Mixroom {APP_VERSION}</Text><Text style={s.versionText}>{updateStatus === 'checking' ? 'Проверяем обновления…' : updateStatus === 'available' ? `Доступна версия ${availableUpdate?.version}` : updateStatus === 'error' ? 'Автопроверка недоступна' : 'Установлена актуальная версия'}</Text></View>
-        <Pressable accessibilityRole="button" disabled={updateStatus === 'checking'} onPress={() => availableUpdate ? downloadUpdate() : refreshUpdate(true)} style={s.versionButton}><Text style={s.versionButtonText}>{availableUpdate ? 'Обновить' : 'Проверить'}</Text></Pressable>
-      </View>
-      <Text style={s.footer}>18+  ·  Вкусовой ориентир для мастера. Крепость и наличие уточняй в заведении.</Text>
-    </ScrollView>}
+    <StatusBar style="light" />
+    <View style={s.appBody}>
+      {screen === 'mix' ? home : screen === 'saved' ? collection : <CatalogScreen initialQuery={catalogQuery} />}
+    </View>
+    <BottomNavigation screen={screen} savedCount={favoriteIds.length} onSelect={next => { if (next !== 'catalog') setCatalogQuery(''); setScreen(next); }} />
 
     <Modal visible={opened} animationType="slide" onRequestClose={() => setOpened(false)}>
-      <SafeAreaView style={s.recipeSafe}><ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={s.sheet}>
-        <View style={s.sheetHeader}><View style={s.sheetBrandLockup}><View style={s.sheetMark} /><Text style={s.sheetBrand}>mixroom</Text></View><Pressable accessibilityRole="button" onPress={() => setOpened(false)} style={s.close}><Text style={s.closeText}>×</Text></Pressable></View>
-        <View style={s.paperTopline}><Text style={s.paperEyebrow}>КАРТОЧКА ДЛЯ МАСТЕРА</Text><Pressable accessibilityRole="button" onPress={() => toggleFavorite(selected)} style={s.paperFavorite}><Text style={s.paperFavoriteText}>{selectedIsFavorite ? '♥ Сохранено' : '♡ Сохранить'}</Text></Pressable></View>
-        <Text style={s.paperProfile}>{selected.profile}</Text><Text style={s.paperTitle}>{selected.name}</Text><Text style={s.paperDescription}>{selected.description}</Text>
-        {selected.source && <Pressable accessibilityRole="link" onPress={() => Linking.openURL(selected.source!.url)} style={s.paperSource}><Text style={s.paperSourceLabel}>РЕКОМЕНДАЦИЯ НЕДЕЛИ</Text><Text style={s.paperSourceAuthor}>{selected.source.author}</Text><Text style={s.paperSourceLink}>{selected.source.title} ↗</Text></Pressable>}
-        <View style={s.paperIngredients}>{selected.ingredients.map(([name, percent], index) => <Pressable accessibilityRole="button" accessibilityLabel={'Найти в палитре марок: ' + name} onPress={() => openCatalog(name)} key={name} style={s.paperRow}><Text style={s.paperIndex}>{String(index + 1).padStart(2, '0')}</Text><Text style={s.paperName}>{name}</Text><Text style={s.paperPercent}>{percent}<Text style={s.paperPercentMark}>%</Text></Text></Pressable>)}</View>
-        <View style={s.paperNoteCard}><Text style={s.paperEyebrow}>КОММЕНТАРИЙ</Text><Text style={s.paperNote}>{selected.note}</Text></View>
-        <Text style={s.paperHint}>Проценты показывают соотношение вкусов. Итоговую крепость и доступные аналоги согласуйте с мастером.</Text>
-        <Pressable accessibilityRole="button" style={s.shareButton} onPress={share}><Text style={s.whiteButtonText}>Поделиться рецептом</Text><Text style={s.buttonArrow}>↗</Text></Pressable>
-      </ScrollView></SafeAreaView>
+      <SafeAreaView style={s.modalSafe}>
+        <StatusBar style="light" />
+        <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={s.recipeSheet}>
+          <View style={s.modalHeader}><MixroomLogo /><Pressable accessibilityRole="button" accessibilityLabel="Закрыть рецепт" onPress={() => setOpened(false)} style={s.modalClose}><Text style={s.modalCloseText}>×</Text></Pressable></View>
+          <View style={s.recipePassport}>
+            <View style={[s.passportAccent, { backgroundColor: selected.color }]} />
+            <View style={s.passportTop}><View><Text style={s.passportKicker}>ПАСПОРТ МИКСА</Text><Text style={s.passportCode}>MR · {selected.generated ? 'CUSTOM' : String(selected.id).padStart(3, '0')}</Text></View><View style={[s.passportSeal, { borderColor: selected.color }]}><Text style={[s.passportSealText, { color: selected.color }]}>{profileInfo[selected.profile].icon}</Text></View></View>
+            <Text style={[s.passportProfile, { color: selected.color }]}>{selected.profile.toUpperCase()}</Text><Text style={s.passportTitle}>{selected.name}</Text><Text style={s.passportDescription}>{selected.description}</Text>
+            <View style={s.passportDivider}><View style={s.passportNotchLeft} /><View style={s.passportDash} /><View style={s.passportNotchRight} /></View>
+            <Text style={s.passportSectionTitle}>СОСТАВ ЧАШИ</Text>
+            <View style={s.passportIngredients}>{selected.ingredients.map(([name, percent], index) => <Pressable accessibilityRole="button" accessibilityLabel={`Найти в палитре ${name}`} onPress={() => openCatalog(name)} key={name} style={s.passportRow}>
+              <View style={[s.passportIngredientNumber, { backgroundColor: `${selected.color}24` }]}><Text style={[s.passportIngredientNumberText, { color: selected.color }]}>{index + 1}</Text></View><Text style={s.passportIngredientName}>{name}</Text><View style={s.passportPercent}><Text style={s.passportPercentValue}>{percent}</Text><Text style={s.passportPercentMark}>%</Text></View>
+            </Pressable>)}</View>
+            <View style={s.masterNote}><Text style={s.masterNoteLabel}>КОММЕНТАРИЙ МАСТЕРУ</Text><Text style={s.masterNoteText}>{selected.note}</Text></View>
+            {selected.source && <Pressable accessibilityRole="link" onPress={() => Linking.openURL(selected.source!.url)} style={s.passportSource}><Text style={s.passportSourceLabel}>ИСТОЧНИК</Text><Text style={s.passportSourceTitle}>{selected.source.author}</Text><Text style={s.passportSourceLink}>{selected.source.title}  ↗</Text></Pressable>}
+          </View>
+          <View style={s.modalActions}>
+            <Pressable accessibilityRole="button" onPress={() => toggleFavorite(selected)} style={[s.modalSave, selectedIsFavorite && s.modalSaveActive]}><Text style={[s.modalSaveText, selectedIsFavorite && s.modalSaveTextActive]}>{selectedIsFavorite ? '♥  Сохранено' : '♡  Сохранить'}</Text></Pressable>
+            <Pressable accessibilityRole="button" onPress={share} style={s.modalShare}><Text style={s.modalShareText}>Поделиться</Text><Text style={s.modalShareArrow}>↗</Text></Pressable>
+          </View>
+          <Text style={s.modalHint}>Проценты показывают соотношение ароматик. Крепость и способ забивки мастер подбирает отдельно.</Text>
+        </ScrollView>
+      </SafeAreaView>
     </Modal>
   </SafeAreaView>;
 }
