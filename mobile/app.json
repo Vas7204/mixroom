@@ -2,7 +2,7 @@
   "expo": {
     "name": "Mixroom",
     "slug": "mixroom",
-    "version": "1.5.1",
+    "version": "1.5.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
@@ -11,7 +11,7 @@
     },
     "android": {
       "package": "app.mixroom.mobile",
-      "versionCode": 8,
+      "versionCode": 9,
       "adaptiveIcon": {
         "backgroundColor": "#0B0710",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -20,13 +20,23 @@
       },
       "predictiveBackGestureEnabled": false
     },
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#0B0710"
-    },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0B0710",
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "dark": {
+            "backgroundColor": "#0B0710",
+            "image": "./assets/splash-icon.png"
+          }
+        }
+      ]
+    ]
   }
 }

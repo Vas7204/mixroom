@@ -34,6 +34,14 @@ $env:JAVA_HOME = $javaHome
 $env:Path = (Join-Path $javaHome 'bin') + [IO.Path]::PathSeparator + $env:Path
 $env:NODE_ENV = 'production'
 
+Push-Location $buildDirectory
+try {
+  & npx.cmd expo prebuild --platform android --clean --no-install
+  if ($LASTEXITCODE -ne 0) { throw "Expo prebuild failed with exit code $LASTEXITCODE" }
+} finally {
+  Pop-Location
+}
+
 $nativeBuildGradle = Join-Path $buildDirectory 'android/app/build.gradle'
 $nativeBuildConfig = Get-Content -LiteralPath $nativeBuildGradle -Raw
 $nativeBuildConfig = [regex]::Replace(
