@@ -16,11 +16,17 @@ if (-not $buildDirectory.StartsWith($temporaryRoot, [StringComparison]::OrdinalI
 }
 
 New-Item -ItemType Directory -Path $buildDirectory | Out-Null
-& robocopy.exe $projectRoot $buildDirectory /E /XD .gradle-cache .android-home .expo .npm-cache /NFL /NDL /NJH /NJS /NP
+& robocopy.exe $projectRoot $buildDirectory /E /XD node_modules .gradle-cache .android-home .expo .npm-cache /NFL /NDL /NJH /NJS /NP
 $copyExitCode = $LASTEXITCODE
 if ($copyExitCode -gt 7) {
   throw "Project copy failed with robocopy exit code $copyExitCode"
 }
+
+$sourceNodeModules = Join-Path $projectRoot 'node_modules'
+if (-not (Test-Path -LiteralPath $sourceNodeModules)) {
+  throw 'Project dependencies are not installed'
+}
+Copy-Item -LiteralPath $sourceNodeModules -Destination $buildDirectory -Recurse -Force
 
 $androidSdk = [IO.Path]::GetFullPath((Join-Path $env:LOCALAPPDATA 'Android/Sdk'))
 if (-not (Test-Path -LiteralPath $androidSdk)) {

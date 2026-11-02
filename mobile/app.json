@@ -2,7 +2,7 @@
   "expo": {
     "name": "Mixroom",
     "slug": "mixroom",
-    "version": "1.5.3",
+    "version": "1.5.4",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
@@ -11,7 +11,7 @@
     },
     "android": {
       "package": "app.mixroom.mobile",
-      "versionCode": 10,
+      "versionCode": 11,
       "adaptiveIcon": {
         "backgroundColor": "#0B0710",
         "foregroundImage": "./assets/android-icon-foreground.png",
